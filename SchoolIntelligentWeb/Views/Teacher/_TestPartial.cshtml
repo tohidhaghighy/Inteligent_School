@@ -1,0 +1,180 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.TestViewModel
+
+
+<div class="row" id="tabletest">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table id="mytable" class="table table-bordred table-striped">
+                <thead>
+                    <th class="text-center">شماره</th>
+                <th class="text-center">توضیحات</th>
+                <th class="text-center">تاریخ شروع</th>
+                <th class="text-center">تاریخ پایان</th>
+                <th class="text-center">مدت آزمون</th>
+                <th class="text-center">تاخیر آزمون</th>
+                <th class="text-center">تعداد سوالات آزمون</th>
+                <th class="text-center">حذف آزمون </th>
+                <th class="text-center">درج سوال</th>
+                <th class="text-center">لیست دانش آموزان آزمون</th>
+                <th class="text-center">Copy سوالات</th>
+                <th class="text-center">Paste سوالات</th>
+                </thead>
+                <tbody id="filelist">
+                @{
+                    if (Model.Tests!= null)
+                    {
+                        foreach (var test in Model.Tests)
+                        {
+                            <tr>
+                                <td class="text-center">@test.Number</td>
+                                <td class="text-center">@test.Text</td>
+                                <td class="text-center">@test.StartDate</td>
+                                <td class="text-center">@test.FinishDate</td>
+                                <td class="text-center">@test.Duration دقیقه</td>
+                                <td class="text-center">@test.MaxDelay دقیقه</td>
+                                <td class="text-center">@test.QuestionCount</td>
+                                <td class="text-center">
+                                    <p>
+                                        <button class="btn btn-danger btn-xs" data-title="حذف آزمون" onclick="deletetest(@test.Id)"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </p>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        <button class="btn btn-primary btn-xs" data-title="درج سوال" onclick="insertnewtest(@test.Id)"><span class="glyphicon glyphicon-edit"></span></button>
+                                    </p>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        <button class="btn btn-primary btn-xs" data-title="لیست دانش آموزان آزمون" onclick="opennewpage(@test.Id, @test.ClassId)"><span class="glyphicon glyphicon-list-alt"></span></button>
+                                    </p>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        <button class="btn btn-warning btn-xs" data-title="کپی سوالات از این آزمون" onclick="Copytestquestion(@test.Id,@test.Number)"><span>copy</span></button>
+                                    </p>
+                                </td>
+                                <td class="text-center">
+                                    <p>
+                                        <button class="btn btn-warning btn-xs" data-title="ارسال سوالات به آزمون" onclick="pastetestquestion(@test.Id,@test.Number)"><span>paste</span></button>
+                                    </p>
+                                </td>
+                            </tr>
+                        }
+
+                    }
+                }
+
+                </tbody>
+            </table>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="copypaste" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" style="text-align: center;">کپی سوالات آزمون</h4>
+            </div>
+            <div class="modal-body" style="direction: rtl;" >
+                <div class="page-alerts" style="display: none;" id="errormodel">
+                    <div class="alert alert-danger page-alert" id="Messagealert">
+                        <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <div id="message" class="text-center">
+                            هر دو آزمون را انتخاب کنید
+                        </div>
+
+                    </div>
+                </div>
+                <div class="page-alerts">
+                    <div class="alert alert-success page-alert" id="isokmodel" style="display: none;">
+                        <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <div id="message" class="text-center">
+                            کپی به درستی انجام شد
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <input type="text" class="form-control" id="txtpastequestion" disabled="disabled" />
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-center">به آزمون </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" class="form-control" id="txtcopyquestion" disabled="disabled" />
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-center">کپی سوالات آزمون</p>
+                    </div>
+                </div>
+                <br />
+                <div class="row" style="display: none;">
+                    <div class="col-lg-4">
+                        <input type="text" class="form-control" id="idtxtpastequestion" disabled="disabled" />
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" class="form-control" id="idtxtcopyquestion" disabled="disabled" />
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="Copyfunc()">انجام کپی</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+
+    function Copytestquestion(id,number) {
+        $('#txtcopyquestion').val(number);
+        $('#idtxtcopyquestion').val(id);
+    }
+
+    function pastetestquestion(id,number) {
+        $('#copypaste').modal('show');
+        $('#txtpastequestion').val(number);
+        $('#idtxtpastequestion').val(id);
+        
+    }
+
+    function Copyfunc() {
+        var copyquestion = $('#idtxtcopyquestion').val();
+        var pastequestion=$('#idtxtpastequestion').val();
+        if (copyquestion=="" || pastequestion=="") {
+            $('#errormodel').attr('style','display:normal');
+        }
+        if (copyquestion!="" && pastequestion!="") {
+            $.ajax({
+                url: "/Teacher/CopyPaste?questionidcopy=" + copyquestion+"&questionidpaste="+pastequestion,
+                type: "Post",
+                dataType: "Json",
+                success: function (result) {
+                    $('#errormodel').hide();
+                    $('#successmodel').hide();
+                    if (result == "true") {
+                        $('#isokmodel').attr('style','display:normal');
+                    } else {
+                        $('#errormodel').attr('style','display:normal');
+                    }
+                    location.reload();
+                },
+                error: function () {
+                    alert("خطا!");
+                }
+            });
+        }
+       
+    }
+</script>
+

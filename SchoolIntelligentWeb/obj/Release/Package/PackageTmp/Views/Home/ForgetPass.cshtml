@@ -1,0 +1,61 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.MoreClasses.User
+
+@{
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+<div class="box">
+    @using (Ajax.BeginForm("Forgetaction", "Login", new AjaxOptions { HttpMethod = "Post", Url = "/Login/Forgetaction", LoadingElementId = "imgloading", OnBegin = "showhide(0)", OnComplete = "showhide(1)" }))
+    {
+            <div class="row" style="margin-top: 60px">
+                <div id="logingroup" class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <fieldset>
+                        <h2 style="text-align: center;">رمز عبور خود را فراموش کرده ام؟</h2>
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <h3 class="text-center form-control" id="Error" style="color: black; background-color: greenyellow; display: none;"></h3>
+                        </div>
+                        <div class="form-group">
+                            <select class="input-large form-control" name="TypePerson" id="TypePerson" style="text-align: right;">
+                                <option value="1" style="text-align: right;">معلم</option>
+                                <option value="2" selected="selected" style="text-align: right;">دانش آموز</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            @Html.TextBoxFor(p => p.NationalCode, new { @class = "form-control input-lg required", placeholder = "کد ملی", style = "text-align: right;" })
+                            @Html.ValidationMessageFor(p => p.NationalCode)
+                        </div>
+                        <div class="form-group">
+                            @Html.TextBoxFor(p => p.Email, new { @class = "form-control input-lg required", placeholder = "ایمیل", style = "text-align: right;" })
+                            @Html.ValidationMessageFor(p => p.Email)
+                        </div>
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <input type="submit" class="btn btn-lg btn-success btn-block" value="دریافت">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <a href="/" class="btn btn-lg btn-primary btn-block">بازگشت</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 img-responsive">
+                    <img id="imgloading" src="~/Images/loading.gif" style="display: none;" class="pull-left" />
+                </div>
+            </div>
+    }
+</div>
+<script>
+    function showhide(data) {
+        if (data == 0) {
+            $('#logingroup').attr('style', 'display:none;');
+        } else {
+            $('#logingroup').attr('style', 'display:normal;');
+        }
+    }
+</script>
+
+
+

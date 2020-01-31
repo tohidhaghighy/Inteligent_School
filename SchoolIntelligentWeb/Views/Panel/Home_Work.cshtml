@@ -1,0 +1,122 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.Filepage
+@{
+    ViewBag.Title = "Home_Work";
+    Layout = "~/Views/Shared/_LayoutPanel.cshtml";
+}
+
+<style>
+    .file {
+        visibility: hidden;
+        position: absolute;
+    }
+</style>
+
+@using (Html.BeginForm("AddHomework", "Panel", FormMethod.Post, new {enctype = "multipart/form-data", id = "myUploadForm"}))
+{
+    <div class="container" id="loadpage">
+        <hr/>
+        <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;"> ارسال تکالیف</button>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <p class="text-center" style="font-size: 18px;">نام درس </p>
+                </div>
+                <div class="col-md-4 pull-right">
+                    <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;">
+                        @{
+                            foreach (var item in Model.Lessons)
+                            {
+                                <option value="@item.Id" style="text-align: center;">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="col-lg-2 pull-right">
+                    <a id="btnsearch" class="btn btn-info" onclick="Getlisthomework()">جستجو</a>
+                </div>
+            </div>
+            <br/>
+           
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <p class="text-center" style="font-size: 18px;">انتخاب تکلیف</p>
+                </div>
+                <div class="col-md-4 pull-right">
+                    <div class="form-group">
+                        <input type="file" name="homeworkfile" class="file">
+                        <div class="input-group col-xs-12">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                            <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                            <span class="input-group-btn">
+                            <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 pull-right">
+                    <button id="btninsert" class="btn btn-success">ارسال تکلیف</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<hr />
+<div style="direction: rtl;" class="container">
+    <div class="row" id="tablefile">
+        @Html.Partial("_HomeWorkPartial", Model)
+    </div>
+    </div>
+<script src="~/Scripts/AjaxForm/jquery.form.min.js"></script>
+<script>
+    $("#myUploadForm").ajaxForm();
+    function downloadfile(data) {
+        window.location.href = data;
+    }
+
+    window.onload = function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+    };
+
+    function Getlisthomework() {
+        $.ajax({
+            url: "/Panel/Gethomework?lesson=" + $('#Lesson').val(),
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                $("#tablefile").html(result.Name);
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+
+    }
+
+    function deletefile(id) {
+        $.ajax({
+            url: "/Panel/Deletehomework?homeworkid=" + id,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                location.reload();
+            },
+            error: function () {
+                location.reload();
+            }
+        });
+    }
+
+
+    $(document).on('click', '.browse', function () {
+        var file = $(this).parent().parent().parent().find('.file');
+        file.trigger('click');
+    });
+    $(document).on('change', '.file', function () {
+        $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+    });
+
+
+   
+</script>

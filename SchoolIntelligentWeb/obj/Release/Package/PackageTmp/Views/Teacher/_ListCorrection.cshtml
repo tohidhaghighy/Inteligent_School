@@ -1,0 +1,207 @@
+﻿@using System.Diagnostics
+@model SchoolIntelligentWeb.DomainClasses.ViewModels.CorrectionList
+<div class="row" style="direction: rtl;" id="Correctionlist">
+
+    <div class="col-lg-2 ">
+        @Html.Partial("_GradeCorrectionPartial", Model)
+    </div>
+    <div class="col-lg-10 ">
+        <div class="table-responsive scrollable membership-pricing-table">
+            <table class="table table-responsive" style="direction: rtl; width: 100%; height: 100%;">
+                <thead>
+                <tr id="alldate">
+                    <th class="text-center">
+                        نام/سوال
+                    </th>
+                    @{
+                        int count = 1;
+                        foreach (var question in Model.AllQuestion)
+                        {
+                            <th class="text-center">
+                                <a onclick="showmodalquestion('@question.Questiontext','@question.QuestionImage','@question.QuestionAnswer','@question.QuestionAnswerImage',@question.CorrectAnswer,@question.QuestionType,'@question.Allchoise')" style="cursor: pointer">سوال @count</a>
+
+                            </th>
+                            count++;
+                        }
+                    }
+                </tr>
+                </thead>
+                <tbody id="allname">
+
+                @{
+                    int counts = 1;
+                    int num = 0;
+                    foreach (var student in Model.AllGradeQuestion)
+                    {
+                        <tr>
+                            <td>
+                                <p class="text-center" style="height: 50px;">@student.Name</p>
+                            </td>
+                            @{
+                                foreach (var question in student.ListAnswerInfos)
+                                {
+                                    <td>
+                                        <div class="form-group" style="direction: ltr;">
+                                            <div class="input-group">
+                                                @{
+                                                    if (question.IsAnswered==true)
+                                                    {
+                                                      <input type="text" class="form-control" style="text-align: right; height: 50px;" id="Starttime" name="Starttime" placeholder="نمره" value="@question.QuestionGrade" onchange="InsertGradeCorrection(this, @student.Idclass, @student.Idtest, @student.Idstudent, @question.QuestionAnswer)" onkeypress="validate(event)"/>
+                                                    }
+                                                    else
+                                                    {
+                                                      <input type="text" class="form-control" style="text-align: right; height: 50px;" id="Starttime" name="Starttime" placeholder="نمره" value="پاسخ داده نشده" readonly="readonly"/>
+                                                    }
+                                                }
+                                                
+                                                <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#Starttime" data-trigger="click">
+                                                    <p>
+                                                        <button class="btn btn-primary btn-xs" data-title="مشاهده جواب" onclick="showAnswermodal('@question.AnswerImage', '@question.AnswerText', @question.Point)"><span class="glyphicon glyphicon-check"></span></button>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                    num++;
+                                }
+                            }
+                        </tr>
+                    }
+
+
+                }
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="insertNumbersofstudent">
+        <button class="btn btn-success btn-block" onclick="Insertallstudnetsgrades(@Model.Classid,@Model.Testid)">درج نمرات دانش آموزان</button>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Answermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" style="text-align: center;">مشاهده جواب</h4>
+            </div>
+            <div class="modal-body" style="direction: rtl;">
+                <div class="row">
+
+                    <div class="col-lg-2">
+                        <img class="img-responsive img-thumbnail center-block" src="~/Images/exam.png" onclick="showimage(this)" id="imgansweruser" />
+                    </div>
+                    <div class="col-lg-8">
+                        <textarea class="form-control" rows="5" id="txtansweruser" placeholder="جواب تشریحی وجود ندارد" disabled="disabled"></textarea>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-center">جواب تشریحی</p>
+                    </div>
+                </div>
+                <br />
+                <div class="row" style="direction: rtl;">
+                    <div class="col-lg-8">
+
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="text" class="form-control" id="txtpointuser" disabled="disabled" />
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-center">امتیاز سوال</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Questionmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" style="text-align: center;">مشاهده سوال و جواب</h4>
+            </div>
+            <div class="modal-body" style="direction: rtl;">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <img class="img-responsive img-thumbnail center-block" src="~/Images/exam.png" onclick="showimage(this)" id="imgquestionteacher" />
+                    </div>
+                    <div class="col-lg-8">
+                        <textarea class="form-control" id="txtquestionteacher" rows="5" placeholder="متن سوال وجود ندارد" disabled="disabled"></textarea>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-center">متن سوال</p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-2">
+                        <img class="img-responsive img-thumbnail center-block" id="imganswerteacher" onclick="showimage(this)" src="~/Images/exam.png" />
+                    </div>
+                    <div class="col-lg-8">
+                        <textarea class="form-control" rows="5" id="txtanswerteacher" placeholder="متن جواب وجود ندارد" disabled="disabled"></textarea>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-center">متن جواب</p>
+                    </div>
+                </div>
+
+                <br />
+                
+                <div class="row" style="background-color: #dcdcdc" id="choiseitem">
+                    <h3 style="color:darkgreen" class="text-center">گزینه ها</h3>
+                    <p class="text-center" id="txtmultichoise"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function showimage(img) {
+        var src = img.src;
+        window.open(src);
+    }
+
+    function Insertallstudnetsgrades(classid,testid) {
+        $.ajax({
+            url: "/Teacher/InsertallstudentGrades?classid=" + classid + "&testid="+testid,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                alert(result);
+                if (result=="true") {
+                    
+                    $('#successmodel').slideDown('slow');
+                    $('#warrningmodel').hide();
+                }
+                if (result=="false") {
+                    $('#warrningmodel').slideDown('slow');
+                    $('#successmodel').hide();
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+</script>

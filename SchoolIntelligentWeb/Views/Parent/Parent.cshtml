@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Parent";
+    Layout = "~/Views/Shared/_LayoutParentPanel.cshtml";
+}
+
+
+<div class="container">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">نمودار پیشرفت تحصیلی </button>
+    <div class="container">
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</div>
+@section scripts{
+    @Scripts.Render("~/bundles/js/charts")
+
+    <script>
+    $(function () {
+        var chartlessonlist=[];
+        var chartstudentgrade=[];
+        var chartlessongrade=[];
+                $.ajax({
+                    url: "/Panel/Chart",
+                    type: "Post",
+                    dataType: "Json",
+                    success: function (result) {
+                        for (var i = 0; i < result.AllLesson.length; i++) {
+
+                            chartlessonlist.push(result.AllLesson[i].Name);
+
+                        }
+                        for (var i = 0; i < result.AllStudentAvg.length; i++) {
+
+                            chartstudentgrade.push(result.AllStudentAvg[i].Name);
+
+                        }
+                        for (var i = 0; i < result.AllClassAvg.length; i++) {
+
+                            chartlessongrade.push(result.AllClassAvg[i].Name);
+
+                        }
+
+                        makechart(chartlessonlist, chartstudentgrade, chartlessongrade);
+                    },
+                    error: function () {
+                        alert("خطا!");
+                    }
+                });
+    });
+
+    function makechart(listlesson,list2,list3) {
+        var lineChartData = {
+            labels: listlesson,
+            datasets: [{
+                fillColor: "rgba(151,187,205,0)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                data: list2
+            }, {
+                fillColor: "rgba(23,57,45,0)",
+                strokeColor: "rgba(23,57,45,1)",
+                pointColor: "rgba(23,57,45,1)",
+                data: list3
+            }]
+
+        }
+
+        Chart.defaults.global.animationSteps = 50;
+        Chart.defaults.global.tooltipYPadding = 16;
+        Chart.defaults.global.tooltipCornerRadius = 0;
+        Chart.defaults.global.tooltipTitleFontStyle = "normal";
+        Chart.defaults.global.tooltipFillColor = "rgba(0,160,0,0.8)";
+        Chart.defaults.global.animationEasing = "easeOutBounce";
+        Chart.defaults.global.responsive = true;
+        Chart.defaults.global.scaleLineColor = "gray";
+        Chart.defaults.global.scaleFontSize = 16;
+
+        var ctx = document.getElementById("canvas").getContext("2d");
+        var LineChartDemo = new Chart(ctx).Line(lineChartData, {
+            pointDotRadius: 10,
+            bezierCurve: false,
+            scaleShowVerticalLines: false,
+            scaleGridLineColor: "gray"
+        });
+    }
+
+    </script>
+
+}
+

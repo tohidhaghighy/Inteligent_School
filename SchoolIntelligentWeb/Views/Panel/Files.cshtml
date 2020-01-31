@@ -1,0 +1,144 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.Filepage
+@{
+    ViewBag.Title = "Files";
+    Layout = "~/Views/Shared/_LayoutPanel.cshtml";
+}
+
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">لیست فایل ها </button>
+    <div class="container" style="direction: rtl;">
+        <hr />
+        <div class="row">
+            <div class="col-md-1 pull-right"><p class="text-center" style="font-size: 18px;">نام درس :</p></div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;">
+                    @{
+                        foreach (var item in Model.Lessons)
+                        {
+                            <option value="@item.Id" style="text-align: center;">@item.Name</option>
+                        }
+                    }
+                </select>
+
+            </div>
+            <div class="col-md-1 pull-right"><p class="text-center" style="font-size: 18px;">نوع فایل :</p></div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="TypeFile" id="TypeFile" style="text-align: center;">
+                    @{
+                        foreach (var items in Model.Typegrade)
+                        {
+                            <option value="@items.Id" style="text-align: center;">@items.Name</option>
+                        }
+                    }
+
+                </select>
+
+            </div>
+            <div class="col-lg-2 pull-right">
+                <a id="btnsearch" class="btn btn-info" onclick="Getlist()">جستجو</a>
+            </div>
+        </div>
+        <hr />
+        <div class="row" id="tablefile">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table id="mytable" class="table table-bordred table-striped">
+                        <thead>
+                        <th class="text-center">تاریخ</th>
+                        <th class="text-center">توضیحات</th>
+                        <th class="text-center">مخاطب دانلود</th>
+                        <th class="text-center">دانلود</th>
+                        </thead>
+                        <tbody id="filelist">
+
+
+                        @{
+                            if (Model.AllFiles != null)
+                            {
+                                foreach (var item in Model.AllFiles)
+                                {
+                                    <tr>
+                                        <td class="text-center" style="direction: ltr;">@item.Date</td>
+                                        <td class="text-center">@item.Description</td>
+                                        <td class="text-center">@item.PrivateStudentName</td>
+                                        <td class="text-center">
+                                            <p>
+                                                <button class="btn btn-primary btn-xs" data-title="download" onclick="downloadfile('@item.Url')"><span class="glyphicon glyphicon-download"></span></button>
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                }
+                            }
+
+
+                        }
+
+
+
+
+                        </tbody>
+
+                    </table>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="loading">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 img-responsive">
+                <img id="imgloading" src="~/Images/ajaxloader.gif" style="display: none;" class="pull-left" />
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function downloadfile(data) {
+        window.location.href = data;
+    }
+    window.onload = function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+    };
+
+    function Getlist() {
+        $.ajaxSetup({
+            global: false,
+            type: "GET",
+            url: "/File/GetFile",
+            beforeSend: function () {
+                $("#imgloading").attr('style', 'display:normal');
+                $("#tablefile").attr('style', 'display:none');
+
+            },
+            complete: function () {
+                $("#imgloading").attr('style', 'display:none');
+                $("#tablefile").attr('style', 'display:normal');
+            }
+        });
+        $.ajax({
+
+            type: "Get",
+            url: "/File/GetFile",
+            data: {
+                'lessonid': $('#Lesson').val(),
+                'type': $('#TypeFile').val(),
+            },
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                $('#filelist').empty();
+                if (data != "empty") {
+                    var between = "'";
+                    for (var i = 0; i < data.length; i++) {
+                        var html = '<tr><td class="text-center">' + data[i]['Date'] + '</td><td class="text-center">' + data[i]['Description'] + '</td><td class="text-center">' + data[i]['PrivateStudentName'] + '</td><td class="text-center"><p data-placement="top" data-toggle="tooltip" title="download"><button class="btn btn-primary btn-xs" data-title="download" onclick="downloadfile(' + between + '' + data[i]['Url'] + '' + between + ')"><span class="glyphicon glyphicon-download"></span></button></p></td></tr>';
+                        $('#filelist').append(html);
+                    }
+                }
+
+            }
+        });
+    }
+</script>
+
+

@@ -1,0 +1,240 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.MoreClasses.Onlineclassall
+@{
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+
+<style>
+    body {
+        background-color: #dcdcdc;
+    }
+</style>
+<link href="~/Content/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.css" rel="stylesheet" />
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">مدیریت کلاس انلاین </button>
+    <br />
+    <br />
+    <div class="col-lg-12">
+        <a class="btn btn-block btn-success text-center" onclick="InsertQuestion()" id="btnshow"> کلاس انلاین جدید</a>
+    </div>
+    <br />
+    <div id="newtest" style="display: none;">
+        <div class="page-alerts" style="display: none" id="Messagealert">
+            <div class="alert alert-danger page-alert">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="message" class="text-center">
+                </div>
+
+            </div>
+        </div>
+        <div class="page-alerts" style="display: none" id="successmodel">
+            <div class="alert alert-success page-alert" id="Messagealertsuccess">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="message" class="text-center">
+                    درج کلاس با موفقیت انجام شد
+                </div>
+
+            </div>
+        </div>
+        @{
+            if (Model.allinfo != null)
+            {
+                <div class="row">
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">نام معلم</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input class="form-control" name="teachername" id="teachername" style="text-align: right;" value="@Model.allinfo.Name"/>
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">نام خانوادگی معلم</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input class="form-control" name="teacherfamily" id="teacherfamily" style="text-align: right;" type="text" value="@Model.allinfo.Family" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">توضیحات کلاس</p>
+                    </div>
+                    <div class="col-md-10 pull-right">
+                        <input class="form-control" name="classdetail" id="classdetail" style="text-align: right;" placeholder="توضیحات کلاس را وارد کنید" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">مقطع کلاس</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input class="form-control" name="classtext" id="classtext" style="text-align: right;" placeholder="مقطع کلاس را وارد کنید" />
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">شماره موبایل</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input class="form-control" name="phonetxt" id="phonetxt" style="text-align: right;" type="text" value="@Model.allinfo.Phone" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">  زمان شروع کلاس</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#Starttime" data-trigger="click" data-enabletimepicker="true">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </div>
+                                <input type="text" class="form-control" style="text-align: right;" id="Starttime" name="Starttime" placeholder="تاریخ به همراه زمان" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">ایمیل معلم</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input class="form-control" name="emailtxt" id="emailtxt" style="text-align: right;" value="@Model.allinfo.Email" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">نام کاربری</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input type="text" class="form-control" name="usernametxt" id="usernametxt" style="text-align: right;" disabled="disabled" value="@Model.allinfo.Username" />
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <p class="text-center" style="font-size: 18px;">پسورد</p>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <input type="text" class="form-control" name="passwordtxt" id="passwordtxt" style="text-align: right;" />
+                    </div>
+                </div>
+                <br />
+            }
+        }
+        
+        <div class="row">
+            <a class="btn btn-primary btn-block text-center" id="inserttest" onclick="senddata('@Model.allinfo.Username')">درج کلاس انلاین جدید</a>
+        </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container" style="direction: rtl;">
+        @Html.Partial("_OnlineClassPartial",Model.allonlineclass)
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jalaali.js"></script>
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+<script>
+    function InsertQuestion() {
+        $('#btnshow').fadeOut("slow");
+        $('#newtest').slideDown("slow");
+
+    }
+
+    $(function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+        $('#Starttime').MdPersianDateTimePicker({
+            Placement: 'bottom', // default is 'bottom'
+            Trigger: 'focus', // default is 'focus',
+            EnableTimePicker: true, // default is true,
+            TargetSelector: '', // default is empty,
+            GroupId: '', // default is empty,
+            ToDate: false, // default is false,
+            FromDate: false, // default is false,
+        });
+
+    });
+
+    function deleteclass(id) {
+        $.ajax({
+            url: "/OnlineClass/Deleteclass?classid=" + id,
+            type: "Get",
+            dataType: "Json",
+            success: function (result) {
+                if (result == "true") {
+                    location.reload();
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+    
+ 
+    function Onlineclass(username) {
+        window.location.href = "https://mahamsys.com/chat?username="+username+"&usertype=teacher";
+    }
+
+    function addfile(id) {
+        window.location.href = "/Teacher/OnlineClassFile?classid=" + id;
+    }
+
+    function senddata(id) {
+            $('#successmodel').hide();
+            $('#message').empty();
+            if ($("#Starttime").val() == null || $("#Starttime").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>زمان شروع را وارد کنید</strong><br />");
+            }
+            if ($("#teachername").val() == null || $("#teachername").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>نام معلم را وارد کنید</strong><br />");
+            }
+            if ($("#teacherfamily").val() == null || $("#teacherfamily").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>نام خانوادگی را وارد کنید</strong><br />");
+            }
+            if ($("#classdetail").val() == null || $("#classdetail").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>توضیحات کلاس را وارد کنید</strong><br />");
+            }
+            if ($("#classtext").val() == null || $("#classtext").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>مقطع تحصیلی را وارد کنید</strong><br />");
+            }
+            if ($("#usernametxt").val() == null || $("#usernametxt").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>نام کاربری را وارد کنید</strong><br />");
+            }
+            if ($("#passwordtxt").val() == null || $("#passwordtxt").val() == "") {
+                $('#Messagealert').fadeIn('slow');
+                $('#message').append("<strong class='pull-right'>پسورد را وارد کنید</strong><br />");
+            }
+            if ($("#classtext").val() != "" && $("#classdetail").val() != "" && $("#teacherfamily").val() != "" && $("#Starttime").val() != "" && $("#teachername").val() != "" && $("#usernametxt").val() != "" && $("#passwordtxt").val() != "") {
+                $('#Messagealert').hide('slow');
+                addnew(id);
+            }
+        };
+
+
+    
+        function addnew(id){
+
+            $.ajax({
+                url: "/OnlineClass/addclass?name=" + $("#teachername").val() + "&family=" + $("#teacherfamily").val() + "&email=" + $("#emailtxt").val() + "&phone="
+                + $("#phonetxt").val() + "&detail=" + $("#classdetail").val() + "&maghtae=" + $("#classtext").val() + "&date=" + $("#Starttime").val() + "&username="
+                + id + "&password=" + $("#passwordtxt").val(),
+                type: "Get",
+                dataType: "Json",
+                success: function (result) {
+                    if (result == "true") {
+                        location.reload();
+                    }
+                },
+                error: function () {
+                    alert("خطا!");
+                }
+            });
+        }
+</script>
+

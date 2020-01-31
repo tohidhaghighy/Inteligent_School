@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="tohidhaghighi" />
+    <meta name="description" content="مدارس هوشمند" />
+    <meta name="keywords" content="مهام,InteligentSchool , طراحی سایت, اندروید مدارس, مدارس هوشمند, paraco, پارا کو, طراحی وب" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- SITE TITLE -->
+    <title>چت روم مهام</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="~/Content/iconpng.png">
+
+    <script src="~/Scripts/Chatroom/Scripts/Jquary/jquery-1.12.4.js"></script>
+    <script src="~/Scripts/Chatroom/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Chatroom/Scripts/Jquary/jquery.validate.min.js"></script>
+    <script src="~/Scripts/Chatroom/Scripts/Jquary/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/Chatroom/Scripts/Jquary/jquery.validate.unobtrusive.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="~/Scripts/Chatroom/Scripts/Login/stylelogin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+   
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>ورود به چت روم</h1>
+        </header>
+        <section>
+            <div id="container_demo">
+                <a class="hiddenanchor" id="toregister"></a>
+                <a class="hiddenanchor" id="tologin"></a>
+                <div id="wrapper">
+                    <div id="login" class="animate form">
+                            <h1>ورود</h1>
+                            <p style="direction:rtl;">
+                                <label for="username" class="uname pull-right" style="text-align:center;"> نام کاربری </label>
+                                <input type="text" name="username" id="username" placeholder="onlinecla_152d2s2" style="text-align: right;" required/>
+                               
+                            </p>
+                            <p style="direction:rtl;">
+                                <label for="password" class="youpasswd pull-right"> پسورد </label>
+                                <input type="password" name="password" id="password" placeholder="eg. X8df!90EO" style="text-align: right;" required/>
+                                
+                            </p>
+                            <p class="change_link">
+                                <a class="to_register btn-block pull-left" style="background-color:green; cursor:pointer;" value="ورود به سیستم" onclick="logininfo()">ورود به سیستم</a>
+                            </p>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function logininfo() {
+            if ($('#username').val() != "" && $('#password').val()!="") {
+                $.ajax({
+                    type: "Get",
+                    url: "/OnlineClass/LoginApp",
+                    data: {
+                        'username': $('#username').val(),
+                        'password': $('#password').val(),
+                    },
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        if (data == "true") {
+                            window.location.href = "/chat?username=" + $('#username').val()+"&usertype=student";
+                        }
+                        else {
+                            window.location.href = "/Login";
+                        }
+                    },
+                    error: function () {
+                        alert('Error occured');
+                    }
+                });
+            }
+            
+        }
+    </script>
+</body>
+</html>

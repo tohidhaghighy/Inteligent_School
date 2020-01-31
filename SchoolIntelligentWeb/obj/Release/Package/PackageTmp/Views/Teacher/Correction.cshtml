@@ -1,0 +1,121 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.CorrectionList
+
+@{
+    ViewBag.Title = "Correction";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">تصحیح آزمون </button>
+    <br />
+    <br />
+    <div>
+        <div class="page-alerts" id="warrningmodel" style="display: none">
+            <div class="alert alert-warning page-alert" id="Messagealert">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="message" class="text-center">
+                    نمرات درج نشد
+                </div>
+
+            </div>
+        </div>
+        <div class="page-alerts" style="display: none" id="successmodel">
+            <div class="alert alert-success page-alert" id="Messagealertsuccess">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="messagesuccess" class="text-center">
+                    درج با موفقیت انجام شد
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_ListCorrection",Model)
+</div>
+
+
+
+
+
+<script src="~/Scripts/AjaxForm/jquery.form.min.js"></script>
+<script>
+    window.onload = function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+    };
+
+    $("#myUploadForm").ajaxForm();
+    function validate(evt) {
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+        var regex = /[0-9]|\./;
+        if (!regex.test(key)) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+
+    $(function () {
+        
+
+        $('.page-alert .close').click(function (e) {
+            e.preventDefault();
+            $(this).closest('.page-alert').slideUp();
+        });
+
+        //Clear all
+        $('.clear-page-alerts').click(function (e) {
+            e.preventDefault();
+            $('.page-alert').slideUp();
+        });
+
+
+    });
+
+
+    function InsertGradeCorrection(text, classid, testid, studentid, answerquestionid) {
+        $.ajax({
+            url: "/Teacher/GradeCorrection?classid=" + classid + "&testid=" + testid + "&grade=" + text.value + "&studentid=" + studentid + "&testanswerid="+answerquestionid,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    $("#questionCorrectionlist").html(result.Name);
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+
+    function showmodalquestion(questiontext, questionImage, questionAnswer, questionAnswerImage, correctAnswer, questionType,choiseitem) {
+        $('#txtmultichoise').empty();
+        if (questionType == 0) {
+            $('#choiseitem').attr('style', 'display:normal');
+            
+        } else if (questionType == 1) {
+            $('#choiseitem').attr('style', 'display:none');
+        }
+        
+        if (questionImage == "") {
+            questionImage = "../../Images/image.png";
+        }
+        if (questionAnswerImage == "") {
+            questionAnswerImage = "../../Images/image.png";
+        } 
+        $('#imgquestionteacher').attr('src', questionImage);
+        $('#txtquestionteacher').val(questiontext);
+        $('#imganswerteacher').attr('src', questionAnswerImage);
+        $('#txtanswerteacher').val(questionAnswer);
+        $('#txtmultichoise').append(choiseitem);
+        $('#Questionmodal').modal('show');
+    }
+
+    function showAnswermodal(answerimage, answertext, point) {
+        $('#imgansweruser').attr('src', answerimage);
+        $('#txtansweruser').val(answertext);
+        $('#txtpointuser').val(point);
+        $('#Answermodal').modal('show');
+    }
+</script>

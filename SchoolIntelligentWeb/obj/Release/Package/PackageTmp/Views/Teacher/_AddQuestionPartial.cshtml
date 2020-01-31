@@ -1,0 +1,202 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.QuestionViewModel
+
+@{
+    if (@Model.QuestionInfo == null)
+    {
+
+    }
+    else
+    {
+        using (Html.BeginForm("ModifyQuestion", "Teacher", FormMethod.Post, new { enctype = "multipart/form-data", id = "secondUploadForm" }))
+        {
+
+            
+             <input type="number" name="questionid" id="questionid" style="display: none;" value="@Model.QuestionInfo.Id" />
+             <div id="updatetest">
+                 <hr/>
+                 <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">ویرایش سوالات </button>
+                 <br/>
+
+                 <br/>
+                 <div class="page-alerts" style="display: none" id="erroemodelmultichoise">
+                     <div class="alert alert-danger page-alert" id="Messagealert">
+                         <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                         <div id="messagemultichoise" class="text-center">
+
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="page-alerts" style="display: none" id="successmodelmultichoise">
+                     <div class="alert alert-success page-alert" id="Messagealertsuccess">
+                         <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                         <div id="messagesuccessmultichoise" class="text-center">
+                             بروزرسانی با موفقیت انجام شد
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-2 pull-right">
+                         <p class="text-center" style="font-size: 18px;">متن سوال</p>
+                     </div>
+                     <div class="col-md-10 pull-right">
+                         <textarea class="form-control" name="description" rows="5" style="text-align: right;" placeholder="متن سوال مورد نظر خود را وارد کنید">@Model.QuestionInfo.Question</textarea>
+                     </div>
+                 </div>
+                 <br/>
+                 <div class="row">
+                     <div class="col-md-2 pull-right">
+                         <p class="text-center" style="font-size: 18px;">انتخاب عکس متن سوال</p>
+                     </div>
+                     <div class="col-md-4 pull-right">
+                         <div class="form-group">
+                             <input type="file" name="QuestionImage" class="file">
+                             <div class="input-group col-xs-12">
+                                 <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                 <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                                 <span class="input-group-btn">
+                                <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                            </span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-2 pull-right" style="width: 100px; height: 100px;">
+                         <img id="imagequestion" class="img-responsive" src="@Model.QuestionInfo.ImageUrl" onclick="showimage(this)"/>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-2 pull-right">
+                         <p class="text-center" style="font-size: 18px;">امتیاز سوال</p>
+                     </div>
+                     <div class="col-md-4 pull-right">
+                         <input type="number" class="form-control" value="@Model.QuestionInfo.Grade" style="text-align: right;" name="scoretest" id="scoretest" placeholder="نمره سوال مورد نظر را وارد کنید" />
+                     </div>
+                 </div>
+                 <br/>
+                 @{
+                     if (@Model.QuestionInfo.Type == 1)
+                     {
+                         <div id="tashrihitest">
+                             <div class="row">
+                                 <div class="col-md-2 pull-right">
+                                     <p class="text-center" style="font-size: 18px;">متن جواب</p>
+                                 </div>
+                                 <div class="col-md-10 pull-right">
+                                     <textarea class="form-control" name="AnswerDescription" rows="5" style="text-align: right;" placeholder="متن جواب مورد نظر خود را وارد کنید">@Model.QuestionInfo.QuestionAnswerText</textarea>
+                                 </div>
+                             </div>
+                             <br/>
+                             <div class="row">
+                                 <div class="col-md-2 pull-right">
+                                     <p class="text-center" style="font-size: 18px;">انتخاب عکس جواب سوال</p>
+                                 </div>
+                                 <div class="col-md-4 pull-right">
+                                     <div class="form-group">
+                                         <input type="file" name="AnswerImage" class="file">
+                                         <div class="input-group col-xs-12">
+                                             <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                             <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                                             <span class="input-group-btn">
+                                    <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                                </span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 @{
+                                     if (Model.QuestionInfo.QuestionAnswerPhoto != null)
+                                     {
+                                         <div class="col-md-2 pull-right" style="width: 100px; height: 100px;">
+                                             <img id="imagequestion" class="img-responsive" src="@Model.QuestionInfo.QuestionAnswerPhoto" onclick="showimage(this)"/>
+                                         </div>
+                                     }
+                                 }
+
+                             </div>
+                         </div>
+                     }
+                     else if (@Model.QuestionInfo.Type == 0)
+                     {
+                         <div id="testi">
+                             <div class="row">
+                                 <div class="col-md-2 pull-right">
+                                     <p class="text-center" style="font-size: 18px;">گزینه درست</p>
+                                 </div>
+                                 <div class="col-md-10 pull-right">
+                                     <input class="form-control" name="answerkey" style="text-align: right;" value="@Model.QuestionInfo.AnswerKey"/>
+                                 </div>
+                             </div>
+                             <br/>
+                             <div class="row">
+                                 <div class="col-md-2 pull-right">
+                                     <p class="text-center" style="font-size: 18px;">انتخاب عکس جواب سوال</p>
+                                 </div>
+                                 <div class="col-md-4 pull-right">
+                                     <div class="form-group">
+                                         <input type="file" name="AnswerImagetest" class="file">
+                                         <div class="input-group col-xs-12">
+                                             <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                             <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                                             <span class="input-group-btn">
+                                    <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                                </span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 @{
+                                     if (Model.QuestionInfo.QuestionAnswerPhoto != null)
+                                     {
+                                         <div class="col-md-2 pull-right" style="width: 100px; height: 100px;">
+                                             <img id="imagequestion" class="img-responsive" src="@Model.QuestionInfo.QuestionAnswerPhoto" onclick="showimage(this)"/>
+                                         </div>
+                                     }
+                                 }
+
+                             </div>
+
+                            
+                             <div id="answeritems">
+                                 <div class="container" style="direction: rtl;">
+                                     <div class="row">
+                                         <div class="col-md-2 pull-right">
+                                             <p class="text-center" style="font-size: 18px;">متن گزینه</p>
+                                         </div>
+                                         <div class="col-md-8 pull-right">
+                                             <input class="form-control" name="answermultiplytext" id="answermultiplytext" style="text-align: right;" />
+                                         </div>
+                                         <div class="col-md-2 pull-right">
+                                             <a class="btn btn-success" id="btninsertmultiply" onclick="Additemtochoise()">افزودن گزینه</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 @Html.Partial("_MultichoiseQuestion", Model.QuestionInfo.Choises)
+                             </div>
+                         </div>
+                     
+                             
+                     }
+                     <br />
+                             <br />
+                             <div class="row">
+
+                                 <div class="col-lg-6 col-md-6" id="updatesection">
+                                     <button class="btn btn-success btn-block text-center">بروزرسانی</button>
+                                 </div>
+                             </div>
+                 }
+
+
+
+             </div>
+         }
+    }
+}
+<script src="~/Scripts/AjaxForm/jquery.form.min.js"></script>
+<script>
+    
+    $("#secondUploadForm").ajaxForm();
+    function showimage(img) {
+        var src = img.src;
+        window.open(src);
+    }
+</script>

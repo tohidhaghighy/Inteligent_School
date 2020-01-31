@@ -1,0 +1,45 @@
+﻿<div class="text-center center">
+    <p style="font-size:16px;color:white;text-align:center;">لیست فایل ها</p>
+</div>
+<hr />
+
+<div class="box box2 shadow2" style="height:300px; width:94%;margin:3%; background-color:#2b6731; overflow-x:hidden;overflow-y:scroll;" id="filelistscroll">
+   
+</div>
+<script>
+
+   
+
+    $(document).ready(function () {
+    
+        $.urlParam = function (name) {
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            return results[1] || 0;
+        }
+        
+        $.ajax({
+            url: "/OnlineClass/OnlineClassFiles?classname=" +
+                $.urlParam('username'),
+            type: "Get",
+            dataType: "Json",
+            success: function (result) {
+                if (result!=null) {
+                    var between = '"';
+                    for (var i = 0; i < result.length; i++) {
+                        var html = "<ul class='list-inline' style='padding-left:30px;'><li style='padding-left:5px; padding-top:5px;'><img src='/Scripts/Chatroom/Script/download-button.png' style='height:20px;' class='center img-responsive' data-toggle='tooltip' title='دانلود' onclick='downloadfile(" + between + result[i]["Url"] + between + ")'/></li><li class='pull-right' style='padding-right:10px;padding-top:5px;'><img src='/Scripts/Chatroom/Script/archive.png' style='height:20px;' class='center img-responsive' data-toggle='tooltip' title='فایل' /></li><li class='pull-right' style='padding-right:10px;padding-top:5px;'><p class='text-center' style='color:white;'>" + result[i]["Name"] + "</p></li></ul>";
+                        $("#filelistscroll").append(html);
+                    }
+                }
+                
+            }
+        });
+
+    });
+   
+
+    function downloadfile(url) {
+        window.location.href = "http://mahamsys.com"+url;
+    }
+
+
+</script>

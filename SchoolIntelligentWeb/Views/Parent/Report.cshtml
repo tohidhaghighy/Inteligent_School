@@ -1,0 +1,53 @@
+﻿@model List<SchoolIntelligentWeb.DomainClasses.MoreClasses.Assistetmessage>
+@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_LayoutParentPanel.cshtml";
+}
+
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">گزارشات مدیر به اولیا </button>
+    <div class="chat">
+        <div class="chat-history">
+            <ul class="chat-ul">
+                @{
+                    int i = 0;
+                    foreach (var item in Model)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            <li>
+                                <div class="message-data">
+                                    <span class="message-data-name"><i class="fa fa-envelope you"></i> @item.Name</span> <span class="message-data-name"><i class="fa fa-circle you"></i> @item.date</span>
+                                </div>
+                                <div class="message you-message">
+                                    @item.Message
+
+                                </div>
+
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="clearfix">
+                                <div class="message-data align-right">
+                                    <span class="message-data-name"> @item.Name</span><i class="fa fa-envelope you"></i> <span class="message-data-name"> @item.date </span><i class="fa fa-circle you"></i>
+                                </div>
+                                <div class="message me-message float-right"> @item.Message</div>
+                            </li>
+                        }
+                        i++;
+                    }
+}
+            </ul>
+
+        </div> <!-- end chat-history -->
+
+    </div> <!-- end chat -->
+</div>
+
+<script>
+    window.onload = function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+    };
+</script>

@@ -1,0 +1,556 @@
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Owin.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\WebGrease.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Web.Infrastructure.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Owin.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\WebGrease.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+G:\Test school\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\LibExcel.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Owin.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Base.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\WebGrease.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Base.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Base.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Base.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Base.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll.config
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll.config
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll.config
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll.config
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.Core.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+F:\Orgonization\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll.config
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.dll
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DataLayer.dll.config
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.DomainClasses.dll.config
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.ServiceLayer.dll.config
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\SchoolIntelligentWeb.Utilities.dll.config
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\EntityFramework.SqlServer.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Newtonsoft.Json.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Base.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Check.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Helper.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mobile.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MobileDesign.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Mvc.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.MvcMobile.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.Web.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Stimulsoft.Report.WebDesign.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Helpers.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Mvc.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Razor.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Deployment.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.WebPages.Razor.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Optimization.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Antlr3.Runtime.pdb
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Net.Http.Formatting.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\System.Web.Http.WebHost.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.csprojResolveAssemblyReference.cache
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.dll
+D:\ارومیوم\school\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb\obj\Debug\SchoolIntelligentWeb.pdb

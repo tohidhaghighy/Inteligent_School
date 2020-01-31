@@ -1,0 +1,138 @@
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll.config
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.csprojResolveAssemblyReference.cache
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll.config
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.csprojResolveAssemblyReference.cache
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.dll
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.xml
+E:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll.config
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.csprojResolveAssemblyReference.cache
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll.config
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.csprojResolveAssemblyReference.cache
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\Web\Merged School\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll.config
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DataLayer.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.DomainClasses.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\SchoolIntelligentWeb.Utilities.pdb
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Mvc.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Net.Http.Formatting.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\bin\Release\Newtonsoft.Json.xml
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.csprojResolveAssemblyReference.cache
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.dll
+D:\شرکت پویا اندیشان راه اینده\مدرسیه شیدا ایران\وب\SchoolIntelligentWeb1\SchoolIntelligentWeb.DataLayer\obj\Release\SchoolIntelligentWeb.DataLayer.pdb

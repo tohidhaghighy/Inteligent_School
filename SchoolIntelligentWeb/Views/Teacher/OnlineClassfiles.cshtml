@@ -1,0 +1,105 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.Filepage
+@{
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+<hr />
+<div class="row">
+    <p class="text-center">لیست فایل ها</p>
+</div>
+<hr />
+<div id="uploadfile" class="container">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-4 pull-right">
+            <p class="text-center" style="font-size: 18px;">توضیحات فایل</p>
+        </div>
+        <div class="col-md-8 col-lg-8 col-sm-8 pull-right">
+            <input id="description" type="text" class="form-control" style="text-align:right;"  placeholder="توضیحات را وارد کنید" />
+        </div>
+    </div>
+    <br />
+    <div class="jumbotron">
+        <div class="row">
+            <form action="@Url.Action(actionName: "FileUpload", controllerName: "Teacher")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm">
+                <div class="fallback">
+                    <input type="file" name="file" multiple />
+                    <input type="submit" name="btn-submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <input type="hidden" id="hidforid" value="@Model.Id"/>
+    <hr />
+    @Html.Partial("_PartialOnlineClassFiles", Model)
+</div>
+
+
+@section scripts{
+    <script>
+
+    function addfile(name) {
+        $.ajax({
+            url: "/Teacher/AddFilesClassOnline?description=" +
+                $("#description").val() +
+                "&name=" +
+                name +
+                "&classid=" +
+                $("#hidforid").val(),
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    window.location.reload();
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+    Dropzone.options.dropzoneForm = {
+        maxFiles: 2,
+        init: function () {
+            this.on("maxfilesexceeded",
+                function (data) {
+
+                });
+
+            this.on("addedfile",
+                function (file) {
+
+                    var removeButton = Dropzone
+                        .createElement("<button class='btn btn-danger'>حذف از لیست</button>");
+                    var _this = this;
+                    removeButton.addEventListener("click",
+                        function (e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            _this.removeFile(file);
+                        });
+
+                    file.previewElement.appendChild(removeButton);
+                });
+
+            this.on("success",
+                function (data) {
+                    var res = JSON.parse(data.xhr.responseText);
+                    if (res.result == true) {
+                        addfile(res.name);
+
+                    } else {
+
+
+                    }
+
+
+                    this.on("error",
+                        function (data) {
+
+                        });
+                });
+        }
+    };
+        
+    </script>
+}

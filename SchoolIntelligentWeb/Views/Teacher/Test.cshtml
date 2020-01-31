@@ -1,0 +1,318 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.TestViewModel
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+<style>
+    body {
+        background-color: #dcdcdc
+    }
+</style>
+<link href="~/Content/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.css" rel="stylesheet" />
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">مدیریت آزمون </button>
+    <br />
+    <br />
+    <div class="col-lg-12">
+        <a class="btn btn-block btn-success text-center" onclick="InsertQuestion()" id="btnshow"> آزمون جدید</a>
+    </div>
+    <br />
+    <div id="newtest" style="display: none;">
+        <div class="page-alerts">
+            <div class="alert alert-danger page-alert" id="Messagealert">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="message" class="text-center">
+                </div>
+                
+            </div>
+        </div>
+        <div class="page-alerts" style="display: none" id="successmodel">
+            <div class="alert alert-success page-alert" id="Messagealertsuccess">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="message" class="text-center">
+                    درج آزمون با موفقیت انجام شد
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">توضیحات آزمون</p>
+            </div>
+            <div class="col-md-10 pull-right">
+                <input class="form-control" name="Description" id="Description" style="text-align: right;" placeholder="توضیحات آزمون را وارد کنید" />
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">*انتخاب کلاس</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="Whitchclass" id="Whitchclass" style="text-align: center;">
+                    @{
+                        foreach (var lesson in Model.Lessons)
+                        {
+                            <option value="@lesson.Id" style="text-align: center;" class="text-center">@lesson.Name </option>
+                        }
+                    }
+
+                </select>
+
+            </div>
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">*مدت آزمون</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <input class="form-control" name="Testtime" id="Testtime" style="text-align: right;" type="number" />
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">*زمان شروع</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#Starttime" data-trigger="click" data-enabletimepicker="true">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                        <input type="text" class="form-control" style="text-align: right;" id="Starttime" name="Starttime" placeholder="تاریخ به همراه زمان" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">*زمان پایان</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#Endtime" data-trigger="click" data-enabletimepicker="true">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                        <input type="text" class="form-control" style="text-align: right;" id="Endtime" name="Endtime" placeholder="تاریخ به همراه زمان" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">*زمان تاخیر</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <input type="number" class="form-control" name="Delaytime" id="Delaytime" style="text-align: right;" />
+            </div>
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">*امتیاز آزمون</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <input type="number" class="form-control" name="Gradetest" id="Gradetest" style="text-align: right;" value="100"/>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <a class="btn btn-primary btn-block text-center" id="inserttest">درج آزمون جدید</a>
+        </div>
+    </div>
+    
+    <div class="container" style="direction: rtl;">
+        <hr />
+        <div class="row">
+            <div class="col-md-2 pull-right"><p class="text-center" style="font-size: 18px;">انتخاب کلاس :</p></div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;">
+                    @{
+                        foreach (var lesson in Model.Lessons)
+                        {
+                            <option value="@lesson.Id" style="text-align: center;" class="text-center">@lesson.Name </option>
+                        }
+                    }
+
+
+                </select>
+            </div>
+
+            <div class="col-lg-2 pull-right">
+                <a id="btnsearch" class="btn btn-info">جستجو</a>
+            </div>
+        </div>
+        <hr />
+        @Html.Partial("_TestPartial",Model)
+        <div id="loading">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 img-responsive">
+                <img id="imgloading" src="~/Images/ajaxloader.gif" style="display: none;" class="pull-left" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jalaali.js"></script>
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+
+
+    <script>
+
+        function opennewpage(id,classid) {
+            window.location.href = '/Teacher/Correction?testid='+id+'&classid='+classid;
+        }
+
+        $(function () {
+            document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+            $('#Starttime').MdPersianDateTimePicker({
+                Placement: 'bottom', // default is 'bottom'
+                Trigger: 'focus', // default is 'focus',
+                EnableTimePicker: true, // default is true,
+                TargetSelector: '', // default is empty,
+                GroupId: '', // default is empty,
+                ToDate: false, // default is false,
+                FromDate: false, // default is false,
+            });
+            $('#Endtime').MdPersianDateTimePicker({
+                Placement: 'bottom', // default is 'bottom'
+                Trigger: 'focus', // default is 'focus',
+                EnableTimePicker: true, // default is true,
+                TargetSelector: '', // default is empty,
+                GroupId: '', // default is empty,
+                ToDate: false, // default is false,
+                FromDate: false, // default is false,
+            });
+
+            $('#Messagealert').hide('slow');
+            //Show alert
+            $('button[data-toggle="page-alert"]').click(function (e) {
+                e.preventDefault();
+                var id = $(this).attr('data-toggle-id');
+                var alert = $('#Messagealertsuccess');
+                var timeOut;
+                alert.appendTo('.page-alerts');
+                alert.slideDown();
+
+                //Is autoclosing alert
+                var delay = $(this).attr('data-delay');
+                if (delay != undefined) {
+                    delay = parseInt(delay);
+                    clearTimeout(2000);
+                    timeOut = window.setTimeout(function () {
+                        alert.slideUp();
+                    }, delay);
+                }
+            });
+
+            $('.page-alert .close').click(function (e) {
+                e.preventDefault();
+                $(this).closest('.page-alert').slideUp();
+            });
+
+            //Clear all
+            $('.clear-page-alerts').click(function (e) {
+                e.preventDefault();
+                $('.page-alert').slideUp();
+            });
+
+
+        });
+    function InsertQuestion() {
+        $('#btnshow').fadeOut("slow");
+        $('#newtest').slideDown("slow");
+
+    }
+
+    function insertnewtest(id) {
+        window.location.href = '/Teacher/Questions?testid='+id;
+    }
+
+
+    function senddata() {
+        $.ajax({
+            url: "/Teacher/InsertTest?whitchclass=" + $("#Whitchclass").val() + "&description=" + $("#Description").val() + "&testtime=" + $("#Testtime").val()
+            + "&starttime=" + $("#Starttime").val() + "&endtime=" + $("#Endtime").val() + "&delaytime=" + $("#Delaytime").val() + "&grade=" + $("#Gradetest").val(),
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    $('#successmodel').fadeIn('slow');
+                    $("#tabletest").html(result.Name);
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+
+
+    function deletetest(id) {
+        $.ajax({
+            url: "/Teacher/DeleteTest?lesson=" + $("#Lesson").val() + "&testid=" + id,
+            type: "Get",
+            dataType: "Json",
+            success: function (result) {
+                if (result == "true") {
+                    location.reload();
+                }
+                if (result=="false") {
+                    alert(" این ازمون به دلیل داشتن سوال قابلیت حذف ندارد");
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+
+    $(function () {
+        $("#btnsearch")
+            .click(function (e) {
+                $.ajax({
+                    url: "/Teacher/SearchTest?Lesson=" + $("#Lesson").val(),
+                    type: "Post",
+                    dataType: "Json",
+                    success: function (result) {
+                        if (result.Id == 1) {
+                            $("#tabletest").html(result.Name);
+                            
+                        }
+                    },
+                    error: function () {
+                        alert("خطا!");
+                    }
+                });
+            });
+
+        $("#inserttest")
+           .click(function (e) {
+               $('#successmodel').hide();
+               e.preventDefault();
+               $('#message').empty();
+               if ($("#Starttime").val() == null || $("#Starttime").val() == "") {
+                   $('#Messagealert').fadeIn('slow');
+                   $('#message').append("<strong class='pull-right'>زمان شروع را وارد کنید</strong><br />");
+               }
+               if ($("#Endtime").val() == null || $("#Endtime").val() == "") {
+                   $('#Messagealert').fadeIn('slow');
+                   $('#message').append("<strong class='pull-right'>زمان پایان را وارد کنید</strong><br />");
+               }
+               if ($("#Delaytime").val() == null || $("#Delaytime").val() == "") {
+                   $('#Messagealert').fadeIn('slow');
+                   $('#message').append("<strong class='pull-right'>مدت زمان تاخیر را وارد کنید</strong><br />");
+               }
+               if ($("#Testtime").val() == null || $("#Testtime").val() == "") {
+                   $('#Messagealert').fadeIn('slow');
+                   $('#message').append("<strong class='pull-right'>مدت زمان آزمون را وارد کنید</strong><br />");
+               }
+               if ($("#Gradetest").val() == null || $("#Gradetest").val() == "") {
+                   $('#Messagealert').fadeIn('slow');
+                   $('#message').append("<strong class='pull-right'>امتیاز آزمون را وارد کنید</strong><br />");
+               }
+               if ($("#Testtime").val() != "" && $("#Delaytime").val() != "" && $("#Endtime").val() != "" && $("#Starttime").val() != "" && $("#Gradetest").val() != "") {
+                   $('#Messagealert').hide('slow');
+                   senddata();
+               }
+           });
+    });
+</script>

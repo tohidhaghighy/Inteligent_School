@@ -1,0 +1,91 @@
+﻿@model List<SchoolIntelligentWeb.DomainClasses.ViewModels.GradePage>
+@{
+    ViewBag.Title = "Grade";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+<style>
+    .scrollable {
+        float: right;
+        width: 100%;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+</style>
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">نمرات </button>
+    <div class="container" style="direction: rtl;">
+        <hr />
+        <div class="row">
+            <div class="col-md-1 pull-right"><p class="text-center" style="font-size: 18px;">نام کلاس :</p></div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;">
+                    @{
+                        if (Model.Any())
+                        {
+                            if (Model[0].Lessons != null)
+                            {
+                                foreach (var lessons in Model[0].Lessons)
+                                {
+                                    <option value="@lessons.Id" style="text-align: center;">@lessons.Name</option>
+                                }
+                            }
+                        }
+
+
+                    }
+                </select>
+
+            </div>
+            <div class="col-md-1 pull-right"><p class="text-center" style="font-size: 18px;">نوع نمره :</p></div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="TypeLesson" id="TypeLesson" style="text-align: center;">
+                    @{
+                        if (Model.Any())
+                        {
+                            if (Model[0].Typegrade != null)
+                            {
+                                foreach (var types in Model[0].Typegrade)
+                                {
+                                    <option value="@types.Id" style="text-align: center;">@types.Name</option>
+                                }
+                            }
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-lg-2 pull-right">
+                <a id="btnsearch" class="btn btn-info">جستجو</a>
+            </div>
+        </div>
+        <hr />
+    </div>
+    @Html.Partial("_GradePartial",Model)
+</div>
+
+
+
+<script>
+    
+
+    $(function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+        $("#btnsearch")
+            .click(function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "/Teacher/TeacherGrade?Lesson=" + $("#Lesson").val() + "&gradetype=" + $("#TypeLesson").val() + "&type=0",
+                    type: "Post",
+                    dataType: "Json",
+                    success: function (result) {
+                        if (result.Id == 1) {
+                            $("#tablegrade").html(result.Name);
+                        }
+                    },
+                    error: function () {
+                        alert("خطا!");
+                    }
+                });
+            });
+    });
+</script>

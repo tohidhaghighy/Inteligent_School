@@ -1,0 +1,231 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.Filepage
+@{
+    ViewBag.Title = "Files";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">لیست فایل ها </button>
+    <div class="container" style="direction: rtl;">
+        <hr />
+        <div class="row">
+            <div class="col-md-1 pull-right"><p class="text-center" style="font-size: 18px;">نام کلاس :</p></div>
+            <div class="col-md-2 pull-right">
+                <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;" onchange="selectedchange()">
+                    
+                                     @{
+                                         if (Model.Lessons != null)
+                                         {
+                                             foreach (var item in Model.Lessons)
+                                             {
+                                                <option value="@item.Id" style="text-align: center;">@item.Name</option>
+                                             }
+                                         }
+
+                                    }
+                </select>
+            </div>
+            <div class="col-md-2 pull-right"><p class="text-center" style="font-size: 18px;">نام دانش آموز :</p></div>
+            <div class="col-md-2 pull-right">
+                <select class="input-large form-control" name="StudentId" id="StudentId" style="text-align: center;" >
+                    <option value="0" style="text-align: center;">برای همه</option>
+                    @{
+                        if (Model.Students != null)
+                        {
+                            foreach (var item in Model.Students)
+                            {
+                                <option value="@item.Id" style="text-align: center;">@item.Name</option>
+                            }
+                        }
+
+                    }
+                </select>
+            </div>
+            <div class="col-md-1 pull-right"><p class="text-center" style="font-size: 18px;">نوع فایل :</p></div>
+            <div class="col-md-2 pull-right">
+                <select class="input-large form-control" name="TypeFile" id="TypeFile" style="text-align: center;">
+                    @{
+                        if (Model.Typegrade != null)
+                        {
+                            foreach (var items in Model.Typegrade)
+                            {
+                                <option value="@items.Id" style="text-align: center;">@items.Name</option>
+                            }
+                        }
+
+                    }
+
+                </select>
+
+            </div>
+            <div class="col-lg-2 pull-right">
+                <a id="btnsearch" class="btn btn-info btn-block">جستجو</a>
+            </div>
+
+
+        </div>
+        <br />
+        <div id="uploadfile" style="display: none;">
+            <div class="row">
+                <div class="col-md-1 pull-right">
+                    <p class="text-center" style="font-size: 18px;">توضیحات فایل :</p>
+                </div>
+                <div class="col-md-11 pull-right">
+                    <input id="description" type="text" class="form-control" placeholder="توضیحات را وارد کنید" />
+                </div>
+            </div>
+            <br />
+            <div class="jumbotron">
+                <div class="row">
+                    <form action="@Url.Action(actionName: "FileUpload", controllerName: "Teacher")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm">
+                        <div class="fallback">
+                            <input type="file" name="file" multiple />
+                            <input type="submit" name="btn-submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br />
+           
+        </div>
+        <div>
+            <a class="btn btn-primary btn-block" onclick="showfile()" id="btnshowfile">برای درج فایل جدید کلیک کنید</a>
+        </div>
+
+        <hr />
+        @Html.Partial("_FilePartial", Model)
+        <div id="loading">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 img-responsive">
+                <img id="imgloading" src="~/Images/ajaxloader.gif" style="display: none;" class="pull-left" />
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+
+        window.onload = function () {
+            document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+        };
+
+
+        function downloadfile(data) {
+            window.location.href = data;
+        }
+
+        function showfile() {
+            $('#btnshowfile').hide();
+            $('#uploadfile').slideDown('slow');
+
+        }
+
+
+        function selectedchange() {
+            $.ajax({
+                url: "/Teacher/classstudentchange?classid=" +
+                    $("#Lesson").val() ,
+                type: "Post",
+                dataType: "Json",
+                success: function (result) {
+                    $('#StudentId').empty();
+                    var html = "<option value='0' style='text-align: center; '>برای همه</option>";
+                    $('#StudentId').append(html);
+                    for (var i = 0; i < result.length; i++) {
+                        var html = "<option value='" + result[i]["Id"] + "' style='text-align: center; '>" + result[i]["Name"] + "</option>";
+                        $('#StudentId').append(html);
+                    }
+                },
+                error: function () {
+                    alert("خطا!");
+                }
+            });
+        }
+        function addfile(name) {
+            $.ajax({
+                url: "/Teacher/AddFiles?Lesson=" +
+                    $("#Lesson").val() +
+                    "&TypeFile=" +
+                    $("#TypeFile").val() +
+                    "&description=" +
+                    $("#description").val() + "&name=" + name + "&StudentId=" + $('#StudentId').val(),
+                type: "Post",
+                dataType: "Json",
+                success: function (result) {
+                    if (result.Id == 1) {
+                        $("#tablefile").html(result.Name);
+                    }
+                },
+                error: function() {
+                    alert("خطا!");
+                }
+            });
+        }
+
+        $(function() {
+
+
+            $("#btnsearch")
+                .click(function(e) {
+                    e.preventDefault();
+                    $.ajax({
+                        url: "/Teacher/TeacherFiles?Lesson=" + $("#Lesson").val() + "&type=" + $("#TypeFile").val(),
+                        type: "Post",
+                        dataType: "Json",
+                        success: function(result) {
+                            if (result.Id == 1) {
+                                $("#tablefile").html(result.Name);
+                            }
+                        },
+                        error: function() {
+                            alert("خطا!");
+                        }
+                    });
+                });
+        });
+
+        Dropzone.options.dropzoneForm = {
+            maxFiles: 2,
+            init: function() {
+                this.on("maxfilesexceeded",
+                    function(data) {
+
+                    });
+
+                this.on("addedfile",
+                    function(file) {
+
+                        var removeButton = Dropzone
+                            .createElement("<button class='btn btn-danger'>حذف از لیست</button>");
+                        var _this = this;
+                        removeButton.addEventListener("click",
+                            function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                _this.removeFile(file);
+                            });
+
+                        file.previewElement.appendChild(removeButton);
+                    });
+
+                this.on("success",
+                    function(data) {
+                        var res = JSON.parse(data.xhr.responseText);
+                        if (res.result == true) {
+                            addfile(res.name);
+
+                        } else {
+
+
+                        }
+
+
+                        this.on("error",
+                            function(data) {
+
+                            });
+                    });
+            }
+        };
+    </script>
+}

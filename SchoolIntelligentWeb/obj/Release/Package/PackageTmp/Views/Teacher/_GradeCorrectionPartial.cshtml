@@ -1,0 +1,35 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.CorrectionList
+    
+
+
+<div id="questionCorrectionlist">
+    <div class="table-responsive scrollable membership-pricing-table">
+        <table class="table table-responsive" style="direction: rtl; width: 100%; height: 100%;">
+            <thead>
+                <tr id="alldate">
+                    <th class="text-center">
+                        نمره
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="allname">
+                @{
+                    foreach (var question in Model.AllGradeQuestion)
+                    {
+                        <tr>
+                            <td>
+                                <div class="form-group" style="direction: ltr;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" style="text-align: right; width: 90px; height: 50px;" value="@question.ListGrade.Name" placeholder="نمره" onchange="updategrade(@question.Idstudent,@question.Idclass,@question.Idtest)" onkeypress="validate(event)" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

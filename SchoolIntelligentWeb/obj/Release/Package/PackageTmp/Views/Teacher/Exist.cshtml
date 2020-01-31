@@ -1,0 +1,83 @@
+﻿@model List<SchoolIntelligentWeb.DomainClasses.ViewModels.GradePage>
+@{
+    ViewBag.Title = "Exist";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">نمرات </button>
+    <div class="container" style="direction: rtl;">
+        <hr />
+        <div class="row" id="grouplesson">
+            <div class="col-lg-2 pull-right text-center">
+                <p style="font-size:25px;" class="text-center">انتخاب کلاس</p>
+            </div>
+            <div class="col-md-6 pull-right">
+                <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;">
+                    @{
+                        if (Model.FirstOrDefault() != null)
+                        {
+                            foreach (var lessons in Model[0].Lessons)
+                            {
+                                <option value="@lessons.Id" style="text-align: center;">@lessons.Name</option>
+                            }
+                        }
+
+                    }
+                </select>
+
+            </div>
+            <div class="col-lg-2 pull-right">
+                <button id="btnsearch" class="btn btn-info">جستجو</button>
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    @Html.Partial("_ExistPartial", Model)
+    <div id="loading">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 img-responsive">
+            <img id="imgloading" src="~/Images/ajaxloader.gif" style="display: none;" class="pull-left" />
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+
+    window.onload = function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+    };
+
+
+    function showhide(data) {
+        if (data == 0) {
+            $('#tablehozur').attr('style', 'display:none;');
+        } else {
+            $('#tablehozur').attr('style', 'display:normal;');
+        }
+    }
+
+    $(function () {
+        $("#btnsearch")
+            .click(function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "/Teacher/ExistSearch?classid=" + $("#Lesson").val() + "&gradetype=0&type=1",
+                    type: "Post",
+                    dataType: "Json",
+                    success: function (result) {
+                        if (result.Id == 1) {
+                            $("#tablehozur").html(result.Name);
+                        }
+                    },
+                    error: function () {
+                        alert("خطا!");
+                    }
+                });
+            });
+    });
+</script>

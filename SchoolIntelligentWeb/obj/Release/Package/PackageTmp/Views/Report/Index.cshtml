@@ -1,0 +1,29 @@
+﻿@using System.Web.UI.WebControls;
+@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<br/>
+<br/>
+<div class="container">
+    @Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+{
+
+    Localization = "~/Content/Report/fa.xml",
+    Actions =
+        {
+            GetReportSnapshot = "LoadReportSnapshot",
+            ViewerEvent = "ViewerEvent",
+            PrintReport = "PrintReport",
+
+        },
+    Server =
+      {
+          GlobalReportCache = false
+      }
+})
+</div>
+
+

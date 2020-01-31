@@ -1,0 +1,61 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.QuestionViewModel
+<div class="container" style="direction: rtl;">
+
+    <div class="row" id="tabletest">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table id="mytable" class="table table-bordred table-striped">
+                    <thead>
+                    <th class="text-center">شماره</th>
+                    <th class="text-center">سوال</th>
+                    <th class="text-center">نوع سوال</th>
+                    <th class="text-center">امتیاز سوال</th>
+                    <th class="text-center">حذف</th>
+                    <th class="text-center">ویرایش/افزودن گزینه برای سوالات تستی</th>
+                    </thead>
+                    <tbody id="filelist">
+                        @{
+                            foreach (var questions in Model.AllQuestions)
+                            {
+                                <tr>
+                                    <td class="text-center">@questions.QuestionCount</td>
+                                    <td class="text-center">@questions.Question</td>
+                                    @{
+                                if (questions.Type == 0)
+                                {
+                                    <td class="text-center">تستی</td>
+                                }
+                                else if (questions.Type == 1)
+                                {
+                                    <td class="text-center">تشریحی</td>
+                                }
+                                    }
+                                    <td class="text-center">@questions.Grade</td>
+                                    <td class="text-center">
+                                        <p>
+                                            <button class="btn btn-danger btn-xs" data-title="حذف سوال" onclick="deletequestion(@questions.Id,@questions.TestId)"><span class="glyphicon glyphicon-remove"></span></button>
+                                        </p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p>
+                                            <button class="btn btn-primary btn-xs" data-title="ویرایش سوال" onclick="updatequestion(@questions.Id,@questions.TestId)"><span class="glyphicon glyphicon-edit"></span></button>
+                                        </p>
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loading">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 img-responsive">
+            <img id="imgloading" src="~/Images/ajaxloader.gif" style="display: none;" class="pull-left" />
+        </div>
+    </div>
+</div>
+

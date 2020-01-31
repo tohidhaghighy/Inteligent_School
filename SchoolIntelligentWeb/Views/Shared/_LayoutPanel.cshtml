@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="fa" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/iconpng.png" />
+    <meta name="description" content="مدارس هوشمندی برنامه ای برای ارتقای سطح هوشمندی مدارس در 3 پلت فرم مختلف ایجاد شده است" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="هوشمند سازی مدارس" />
+    <meta name="twitter:description" content="مدارس هوشمندی برنامه ای برای ارتقای سطح هوشمندی مدارس در 3 پلت فرم مختلف ایجاد شده است" />
+    <meta name="twitter:creator" content="توحید حقیقی & امین محمد پور" />
+    <meta property="og:title" content=" برنامه ای برای هوشمند سازی مدارس " />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="مدارس هوشمندی برنامه ای برای ارتقای سطح هوشمندی مدارس در 3 پلت فرم مختلف ایجاد شده است" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <title>پنل کاربری مهام</title>
+</head>
+@Styles.Render("~/Content/Panelcss")
+@Scripts.Render("~/Content/Paneljs")
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link href="~/Design/design.css" rel="stylesheet" />
+<body>
+    <div class="navbar-wrapper">
+        <div class="container-fluid">
+            <nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="color: black;">مدیریت هوشمند آموزشگاه ها و مدارس </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a href="#" class="">صفحه اصلی</a></li>
+                            <li class=" dropdown">
+                                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">بخش های مختلف <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Panel/Grade">مشاهده نمرات و امتیازات</a></li>
+                                    <li><a href="/Panel/Exist">حضور غیاب</a></li>
+                                    <li><a href="/Panel/Home_Work">ارسال تکالیف</a></li>
+                                    <li><a href="/Panel/schedule">برنامه هفتگی</a></li>
+                                    <li><a href="/Panel/Files">مدیریت فایل ها</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
+                                        <img src="@Request.Cookies["photo"].Value" class="img-responsive img-circle" title="عکس" alt="عکس" width="30px" height="30px">
+                                    </span>
+                                    <span class="user-name">
+                                        @Request.Cookies["Name"].Value
+                                    </span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-content">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <img src="@Request.Cookies["photo"].Value" alt="Alternate Text" class="img-responsive" width="120px" height="120px" />
+                                                    <p class="text-center small">
+                                                        
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <span>@Request.Cookies["Name"].Value</span>
+                                                    <p class="text-muted small">
+
+                                                    </p>
+                                                    <div class="divider">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="navbar-footer">
+                                            <div class="navbar-footer-content">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <a class="btn btn-default btn-sm pull-right" style="background-color: black;" onclick="exitsite()">خروج از سایت</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <br /><br />
+        <div class="container">
+            <marquee direction="right">
+                <h2 style="color: #16a085;">به وب سایت مدارس هوشمند خوش آمدید</h2>
+            </marquee>
+          
+            <br />
+            <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">امکانات مدارس هوشمند </button>
+            
+            <hr />
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="col-md-4 pull-right">
+            <a href="/Panel/Grade" target="blank">
+                <div class="alert alert-success">
+                    <div class="panel-body">
+                        <img src="~/Images/exam.png" class="pic_ina img-thumbnail" />
+                        <div class="con_ina">
+                            <b> لیست نمرات </b><br>
+
+                            <br>
+                        </div>
+                    </div>
+                    <a href="/Panel/Grade" class="btn btn-success btn-xs btn_inr">لیست نمرات</a>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 pull-right">
+            <a href="/Panel/Exist" target="blank">
+                <div class="alert alert-danger">
+                    <div class="panel-body">
+                        <img src="~/Images/question-list.png" class="pic_ina img-thumbnail" />
+                        <div class="con_ina">
+                            <b>حضور غیاب</b><br>
+
+                            <br>
+                        </div>
+                    </div>
+                    <a href="/Panel/Exist" class="btn btn-danger btn-xs btn_inr">مشاهده حضورغیاب</a>
+
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="col-md-4 pull-right">
+            <a href="/Panel/Files" target="blank">
+                <div class="alert alert-info">
+                    <div class="panel-body">
+                        <img src="~/Images/folder.png" class="pic_ina img-thumbnail" />
+                        <div class="con_ina">
+                            <b> لیست فایل ها </b><br>
+                            <br>
+                        </div>
+                    </div>
+                    <a href="/Panel/Files" class="btn btn-warning btn-xs btn_inr">فایل ها</a>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4 pull-right">
+            <a href="/Panel/schedule" target="blank">
+                <div class="alert alert-warning">
+                    <div class="panel-body">
+                        <img src="~/Images/calendar.png" class="pic_ina img-thumbnail" />
+                        <div class="con_ina">
+                            <b>برنامه هفتگی </b><br>
+                            <br>
+                        </div>
+                    </div>
+                    <a href="/Panel/schedule" class="btn btn-warning btn-xs btn_inr">برنامه هفتگی</a>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4 pull-right">
+            <a href="/Panel/Home_Work" target="blank">
+                <div class="alert alert-warning">
+                    <div class="panel-body">
+                        <img src="~/Images/homework.png" class="pic_ina img-thumbnail" />
+                        <div class="con_ina">
+                            <b>ارسال تکالیف </b><br>
+                            <br>
+                        </div>
+                    </div>
+                    <a href="/Panel/Home_Work" class="btn btn-warning btn-xs btn_inr">ارسال تکالیف</a>
+                </div>
+            </a>
+        </div>
+    </div>
+<div>
+    @RenderBody()
+</div>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3>  شرکت  <span>پویا اندیشان راه آینده </span></h3>
+
+        <p class="footer-links">
+            <a href="#">درباره ما</a>.
+            <a href="#">تماس با ما</a>
+        </p>
+
+        <p class="footer-company-name">این سایت متعلق به شرکت پویا اندیشان راه اینده است &copy; 2016</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>خیابان استادان</span> مجتمع نور, طبقه 2</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>09144967941</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">tohidhaghighi@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>درباره شرکت پارا</span>
+            هدف ما ارتقا سطح آموزشی کشور است
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-phone"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+    @Scripts.Render("~/bundles/js/dropzone")
+    @RenderSection("scripts", required: false)
+<script>
+
+    $(function () {
+        $('a[title]').tooltip();
+    });
+    function exitsite() {
+        $.ajax({
+            url: "/Login/Exitfromsite",
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result=="true") {
+                    window.location.href = '/';
+                }
+            }
+        });
+    }
+</script>
+</body>
+</html>

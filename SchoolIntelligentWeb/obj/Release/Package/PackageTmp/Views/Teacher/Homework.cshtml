@@ -1,0 +1,151 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.Filepage
+@{
+    ViewBag.Title = "اصلاح تکالیف و لیست تکالیف";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+
+<link href="~/Content/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;"> تصحیح تکالیف</button>
+    <br />
+    <div class="container">
+        <br/>
+        <div class="page-alerts" style="display: none" id="erroemodel">
+            <div class="alert alert-danger page-alert" id="Messagealert">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="message" class="text-center">
+                    مشکلی در درج اطلاعات وجود دارد
+                </div>
+
+            </div>
+        </div>
+        <div class="page-alerts" style="display: none" id="successmodel">
+            <div class="alert alert-success page-alert" id="Messagealertsuccess">
+                <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <div id="messagesuccess" class="text-center">
+                    درج با موفقیت انجام شد
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">نام کلاس </p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="Lesson" id="Lesson" style="text-align: center;">
+                    @{
+                        foreach (var item in Model.Lessons)
+                        {
+                            <option value="@item.Id" style="text-align: center;">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">تاریخ </p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#time" data-trigger="click" data-enabletimepicker="true">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                        <input type="text" class="form-control" style="text-align: right;" id="time" name="time" placeholder="تاریخ به همراه زمان" value=""/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br/>
+        <div class="row">
+            <a class="btn btn-success btn-block text-center" onclick="Searchhomework()">جستجو </a>
+        </div>
+
+    </div>
+</div>
+
+<hr />
+<div style="direction: rtl;" class="container">
+    <div class="row" id="tablefile">
+        @Html.Partial("_HomeworkPartial", Model)
+    </div>
+</div>
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jalaali.js"></script>
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+<script src="~/Scripts/AjaxForm/jquery.form.min.js"></script>
+<script>
+    window.onload = function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+    };
+
+    function validate(evt) {
+        var value = parseInt(evt.value, 10);
+        var max = parseInt(evt.max, 10);
+        var min = parseInt(evt.min, 10);
+
+        if (value > max) {
+            this.value = max;
+        } else if (value < min) {
+            this.value = min;
+        }
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+        var regex = /[0-9]|\./;
+        if (!regex.test(key)) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+
+
+
+    function downloadfile(data) {
+        window.location.href = data;
+    }
+
+    function InsertGrade(idstudent, idlesson, idhomework, text) {
+        $.ajax({
+            url: "/Teacher/AddGradeHomework?lessonid=" + idlesson + "&studentid=" + idstudent + "&homeworkid=" + idhomework + "&grade=" + text.value,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                eval(result);
+            },
+            error: function () {
+            }
+        });
+    }
+
+    function Searchhomework() {
+        if ($("#time").val()!="") {
+            $.ajax({
+                url: "/Teacher/SearchHomework?lessonid=" + $("#Lesson").val() + "&date=" + $("#time").val(),
+                type: "Post",
+                dataType: "Json",
+                success: function (result) {
+                    $('#tablefile').html(result.Name);
+                },
+                error: function () {
+                }
+            });
+        }
+       
+    }
+
+    $(function () {
+        $('#time').MdPersianDateTimePicker({
+            Placement: 'bottom', // default is 'bottom'
+            Trigger: 'focus', // default is 'focus',
+            EnableTimePicker: true, // default is true,
+            TargetSelector: '', // default is empty,
+            GroupId: '', // default is empty,
+            ToDate: false, // default is false,
+            FromDate: false, // default is false,
+        });
+    });
+</script>

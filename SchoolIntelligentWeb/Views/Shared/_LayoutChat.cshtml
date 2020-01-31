@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="tohidhaghighi" />
+    <meta name="description" content="مدارس هوشمند" />
+    <meta name="keywords" content="مهام,InteligentSchool , طراحی سایت, اندروید مدارس, مدارس هوشمند, paraco, پارا کو, طراحی وب" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- SITE TITLE -->
+    <title>چت روم مهام</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="~/Content/iconpng.png">
+    <script src="~/Scripts/Chatroom/Scripts/jquery-1.9.1.min.js"></script>
+    <link href="~/Scripts/Chatroom/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Scripts/Chatroom/Script/shadow.css" rel="stylesheet" />
+    <link href="~/Scripts/Chatroom/Script/listofdesign.css" rel="stylesheet" />
+    <link href="~/Scripts/Chatroom/Script/chat.css" rel="stylesheet" />
+    <link href="~/Scripts/Chatroom/Content/Popup/sweetalert.css" rel="stylesheet" />
+    <style>
+        header {
+            padding-top: 60px;
+            padding-bottom: 3px;
+        }
+
+        .center {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .videoContainer {
+            position: relative;
+            width: 200px;
+            height: 150px;
+        }
+
+            .videoContainer video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+        .volume_bar {
+            position: absolute;
+            width: 5px;
+            height: 0px;
+            right: 0px;
+            bottom: -30px;
+            background-color: #12acef;
+        }
+
+        #localScreenContainer {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="overflow-x:hidden;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#43a047; border-color:white; padding-bottom:0;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top" style="color:black;">وبینار مدارس</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#page-top" style="color:white"><span id="nameofonlineclass"></span> به وبینار خوش آمدی</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <div style="background-color:#66bb6a;">
+
+        <header style="background-color:#66bb6a;">
+            <ul class="list-inline" style="padding-left:30px;">
+                <li style="padding-left:30px;" id="voiceaccept">
+                    <img src="~/Scripts/Chatroom/Script/muted.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="صدا" onclick="voiceaccept()" />
+                </li>
+                <li style="padding-left:30px;" id="videoaccept">
+                    <img src="~/Scripts/Chatroom/Script/video-camera-cancel.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="تصویر" onclick="videoaccept()" />
+                </li>
+                <li style="padding-left:30px;" id="imgscreenpanel">
+                    <img src="~/Scripts/Chatroom/Script/screen-cancel.png" style="height:30px;" id="screenShareButton" class="center img-responsive" data-toggle="tooltip" title="صفحه" onclick="changescreen()"/>
+                </li>
+                <li style="padding-left:30px;" id="libtnfileshow">
+                    <img src="~/Scripts/Chatroom/Script/archive.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title=" افزودن فایل ها" id="btnfileshow" />
+                </li>
+                <li style="padding-left:30px;display:none;" id="libtnfilehide">
+                    <img src="~/Scripts/Chatroom/Script/archivecancel.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="بستن فایل ها" id="btnfilehide" />
+                </li>
+                <li style="padding-left:30px; display:none;" id="hideusers">
+                    <img src="~/Scripts/Chatroom/Script/users-group.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="بستن لیست تصویری افراد" id="btnhide" onclick="showlistofnormal()" />
+                </li>
+                <li style="padding-left:30px;display:none; " id="giveejaze">
+                    <img src="~/Scripts/Chatroom/Script/hold.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="گرفتن اجازه" id="sendejazetoteacher" onclick="givepermition()" />
+                </li>
+                <li style="padding-left:30px;display:none; " id="canceljaze">
+                    <img src="~/Scripts/Chatroom/Script/holdcancel.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="بستن کل چت ها" id="sendejazetoteacher" onclick="closeallejaze()" />
+                </li>
+                <li class="pull-right" style="padding-right:30px;">
+                    <img src="~/Scripts/Chatroom/Script/exit(1).png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="خروج از برنامه" />
+                </li>
+                <li class="pull-right" style="padding-right:10px;">
+                    <p class="text-center" style="color:white;">خروج از وبینار</p>
+                </li>
+            </ul>
+        </header>
+
+        <div class="col-lg-12 col-md-12 col-sm-12" id="panelofonlinechat">
+            <div class="col-lg-9 col-md-9 col-sm-12" style="background-color:#66bb6a;padding:10px;height:790px; margin-top:5px;border-radius:5px;" id="panelvideo">
+
+                <div id="sharescreen">
+
+                </div>
+                <div id="localScreenContainer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;" >
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12" id="panelitem">
+                <div class="box1 shadow7 col-lg-12 col-md-12 col-sm-12" style="background-color:#66bb6a; padding:10px;border-radius:5px; margin-top:5px;">
+                    <ul class="list-inline" style="padding-left:30px;">
+                        <li style="padding-left:5px; padding-top:5px;">
+                            <img src="~/Scripts/Chatroom/Script/video-camera.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="وبکم " />
+                        </li>
+
+                        <li class="pull-right" style="padding-right:10px;padding-top:5px;">
+                            <p class="text-center" style="color:white;">وبکم</p>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <p class="text-center" style="color:white;font-size:15px;">خودم</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <p class="text-center" style="color:white;font-size:15px;">سایرین</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="videoContainer" style="padding-right:10px;padding-left:10px;border-color:white;">
+                                <video id="localVideo" style="width:150px; height:150px;" oncontextmenu="return false;"></video>
+                                <div id="localVolume" class="volume_bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <img class="img-responsive" src="~/Scripts/Chatroom/Script/users-group.png" id="btnshowallmember" style="padding:10px;" onclick="showalluservideo()" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box2  shadow2 col-lg-12 col-md-12 col-sm-12" style="height:200px;background-color:#66bb6a; border-radius:5px; padding:5px;margin-top:5px;">
+                    <ul class="list-inline user-list" style="padding-left:30px;">
+                        <li style="padding-left:5px; padding-top:5px;">
+                            <img src="~/Scripts/Chatroom/Script/users-group.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="کاربران" />
+                        </li>
+
+                        <li class="pull-right" style="padding-right:10px;padding-top:5px;">
+                            <p class="text-center" style="color:white;"><small id="usernumtext"></small> :افراد انلاین</p>
+                        </li>
+                    </ul>
+                    <div class="box box2 shadow2" style="height:130px; width:94%;margin:3%; background-color:#2b6731;overflow:hidden; overflow-y:scroll;" id="userlist">
+                        @Html.Partial("_PartialUsers")
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 box2 shadow2" style="height:330px; background-color:#66bb6a; border-radius:5px; padding:5px;margin-top:5px;">
+                    <ul class="list-inline" style="padding-left:30px;">
+                        <li style="padding-left:5px; padding-top:5px;">
+                            <img src="~/Scripts/Chatroom/Script/chat.png" style="height:30px;" class="center img-responsive" data-toggle="tooltip" title="چت کردن" />
+                        </li>
+
+                        <li class="pull-right" style="padding-right:10px;padding-top:5px;">
+                            <p class="text-center" style="color:white;">در حال چت کردن</p>
+                        </li>
+                    </ul>
+                    <div class="box box2 shadow2" id="scrollablelist" style="height:200px; width:94%;margin:3%;max-height:200px; background-color:#2b6731; overflow-x:hidden;overflow-y:scroll;">
+                        @Html.Partial("_PartialChat")
+                    </div>
+                    <div style="height:30px; width:94%;margin:3%;">
+                        <div class="col-lg-9 col-md-9 col-sm-7 col-xs-7 pull-right">
+                            <input id="messageofusers" type="text" class="form-control center-block center" style="width:100%; padding-right:10px; background-color:#2b6731; color:white; text-align:right; border-color:#2b6731;" />
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 pull-left">
+                            <img src="~/Scripts/Chatroom/Script/send.png" id="sendmassagetoserver" style="height:30px; padding-right:10px;" class="center img-responsive" data-toggle="tooltip" title="ارسال پیام" onclick="sendmassege()" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row" style="margin-left:5px;margin-right:5px;display:none;" id="panelusercamera">
+            <div style="height:780px; background-color:#43a047;width:98%; margin-right:1%; margin-left:1%;float:left;" class="box box1 shadow1">
+                <div id="remotes"></div>
+            </div>
+        </div>
+
+        <div id="panelfile" style="height:750px; background-color:#43a047;width:98%; margin-right:1%; margin-left:1%;float:left;display:none" class="box box1 shadow1">
+            @Html.Partial("_PartialFiles")
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+        <div class="row" style="background-color:#43a047;">
+            <p class="text-center" style="font-size:17px; color:white;">طراحی شده توسط شرکت پارا</p>
+        </div>
+        <input type="hidden" id="displayname" />
+
+    </div>
+
+    <script src="~/Scripts/Chatroom/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Chatroom/Content/Popup/sweetalert.min.js"></script>
+    <script src="~/Scripts/Chatroom/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/Chatroom/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <!-- SignalR Proxy -->
+    <script src="~/signalr/hubs"></script>
+
+    <!-- App JS -->
+
+    <script>
+        var chat = $.connection.webRtcHub;
+        chat.client.additem = function (item) {
+            $('#userlist').empty();
+            $('#userlist').append(item);
+        }
+        chat.client.usercount = function (count) {
+            $('#usernumtext').empty();
+            $('#usernumtext').append(count);
+        }
+
+        chat.client.hidedesktop = function () {
+            $('#sharescreen').empty();
+        }
+
+        chat.client.cancelejaze = function () {
+            webrtc.mute();
+            webrtc.pauseVideo();
+            $('#voiceaccept').hide();
+            $('#videoaccept').hide();
+        }
+        chat.client.messagesender = function (message, name) {
+
+            $('#messagesul').append("<li><div class='message-data'><span class='message-data-name'><i class='fa fa-circle you'></i> " + name + "</span></div><div class='message you-message' style='text-align:right;'>" + message + "</div></li>");
+            $("#scrollablelist").scrollTop($("#scrollablelist")[0].scrollHeight);
+        }
+        chat.client.clientpermition = function (text) {
+            swal({
+                title: text,
+                text: "شما میتوانید به صورت صوتی و تصویری با معلم در ارتباط باشید",
+                html: true,
+                animation: "slide-from-top",
+                timer:9000
+            });
+            $('#voiceaccept').show();
+            $('#videoaccept').show();
+        }
+
+        $.connection.hub.start().done(function () {
+            console.log("signalr is start");
+
+        });
+        $(document).ready(function () {
+            $('#messageofusers').keypress(function (e) {
+                var key = e.which;
+                if (key == 13)  // the enter key code
+                {
+                    $('#sendmassagetoserver').click();
+                    return false;
+                }
+            });
+            swal({
+                title: "نامی برای شروع چت وارد کنید",
+                text: "<span style='color:#f8bb86;font-weight:700;'>نام خود را وارد کنید</span>",
+                type: "input",
+                html: true,
+                showCancelButton: false,
+                closeOnConfirm: true,
+                animation: "slide-from-top",
+                inputPlaceholder: "نام شما"
+            },
+            function (inputValue) {
+                userName = inputValue;
+                if (inputValue === false) return false;
+                if (inputValue === "") {
+                    swal.showInputError("باید نام خود را وارد کنید !");
+                    return false;
+                }
+                $('#displayname').val(inputValue);
+                if ($('#displayname').val() != "") {
+
+                    $('#nameofonlineclass').append(inputValue);
+                    $.urlParam = function (name) {
+                        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                        return results[1] || 0;
+                    }
+                    if ($.urlParam('usertype') == "teacher") {
+                        $('#giveejaze').hide();
+                        $('#canceljaze').show();
+                        $('#voiceaccept').empty();
+                        $('#voiceaccept').append("<img src='/Scripts/Chatroom/Script/microphone.png' style='height:30px;' class='center img-responsive' data-toggle='tooltip' title='صدا' onclick='voiceunaccept()'/>");
+                        $('#videoaccept').empty();
+                        $('#videoaccept').append("<img src='/Scripts/Chatroom/Script/video-camera.png' style='height:30px;' class='center img-responsive' data-toggle='tooltip' title='دوربین' onclick='videounaccept()'/>");
+                    }
+                    if ($.urlParam('usertype') == "student") {
+                        webrtc.mute();
+                        webrtc.pauseVideo();
+                        $('#giveejaze').show();
+                        $('#imgscreenpanel').hide();
+                        $('#voiceaccept').hide();
+                        $('#videoaccept').hide();
+                        $('#canceljaze').empty();
+                        $('#canceljaze').hide();
+                        
+                    }
+                    chat.server.join($('#displayname').val(), $.urlParam('username'));
+                } else {
+                    window.location.reload();
+                }
+
+            });
+
+
+            $("#btnfileshow").click(function () {
+                $("#panelofonlinechat").hide(1000);
+                $("#panelfile").show(1000);
+                $("#libtnfileshow").hide(1000);
+                $("#libtnfilehide").show(1000);
+            });
+
+            $("#btnfilehide").click(function () {
+                $("#panelofonlinechat").show(1000);
+                $("#panelfile").hide(1000);
+                $("#libtnfilehide").hide(1000);
+                $("#libtnfileshow").show(1000);
+            });
+        });
+
+        function sendmassege() {
+            if ($('#messageofusers').val() != "") {
+                $.urlParam = function (name) {
+                    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                    return results[1] || 0;
+                }
+                chat.server.sendmassege($.urlParam('username'), $('#messageofusers').val());
+                $('#messagesul').append("<li class='clearfix'><div class='message-data align-right'><span class='message-data-name'>خودم</span> <i class='fa fa-circle me'></i></div><div class='message me-message float-right' style='text-align:right;'> " + $('#messageofusers').val() + "</div></li>");
+                $('#messageofusers').val("");
+                $("#scrollablelist").scrollTop($("#scrollablelist")[0].scrollHeight);
+            }
+
+        };
+
+
+        function givepermition() {
+            $.urlParam = function (name) {
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                return results[1] || 0;
+            }
+            chat.server.sendPermition($.urlParam('username'));
+        }
+
+        function permitionaccept(id) {
+            $.urlParam = function (name) {
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                return results[1] || 0;
+            }
+            if ($.urlParam('usertype') == "teacher") {
+                chat.server.acceptPermitionbyteacher(id);
+            }
+
+        }
+
+        function closeallejaze() {
+            $.urlParam = function (name) {
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                return results[1] || 0;
+            }
+            if ($.urlParam('usertype') == "teacher") {
+                chat.server.cancelallejaze($.urlParam('username'));
+            }
+        }
+
+        function voiceaccept() {
+            $('#voiceaccept').empty();
+            $('#voiceaccept').append("<img src='/Scripts/Chatroom/Script/microphone.png' style='height:30px;' class='center img-responsive' data-toggle='tooltip' title='صدا' onclick='voiceunaccept()'/>");
+            webrtc.unmute();
+        }
+
+        function voiceunaccept() {
+            $('#voiceaccept').empty();
+            $('#voiceaccept').append("<img src='/Scripts/Chatroom/Script/muted.png' style='height:30px;' class='center img-responsive' data-toggle='tooltip' title='صدا' onclick='voiceaccept()'/>");
+            webrtc.mute();
+        }
+
+
+        function videoaccept() {
+            $('#videoaccept').empty();
+            $('#videoaccept').append("<img src='/Scripts/Chatroom/Script/video-camera.png' style='height:30px;' class='center img-responsive' data-toggle='tooltip' title='دوربین' onclick='videounaccept()'/>");
+            webrtc.resumeVideo();
+        };
+
+
+        function videounaccept() {
+            $('#videoaccept').empty();
+            $('#videoaccept').append("<img src='/Scripts/Chatroom/Script/video-camera-cancel.png' style='height:30px;' class='center img-responsive' data-toggle='tooltip' title='دوربین' onclick='videoaccept()'/>");
+            webrtc.pauseVideo();
+        };
+        function showalluservideo() {
+            $("#panelofonlinechat").hide(1000);
+            $("#panelusercamera").show(1000);
+            $("#hideusers").show(1000);
+        };
+
+        function showlistofnormal() {
+            $("#panelusercamera").hide(1000);
+            $("#panelofonlinechat").show(1000);
+            $("#hideusers").hide(1000);
+
+        };
+
+
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="~/Scripts/Chatroom/Script/out/simplewebrtc-with-adapter.bundle.js"></script>
+    <script src="~/Scripts/Chatroom/Script/out/Maincamera.js"></script>
+</body>
+</html>

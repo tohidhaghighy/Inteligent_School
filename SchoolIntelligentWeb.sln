@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIntelligentWeb", "SchoolIntelligentWeb\SchoolIntelligentWeb.csproj", "{45A42420-A85F-4EC6-B526-F2E27C9D172C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIntelligentWeb.DomainClasses", "SchoolIntelligentWeb.DomainClasses\SchoolIntelligentWeb.DomainClasses.csproj", "{67E9631F-35F7-4321-9FFF-C5F1EDC586FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIntelligentWeb.DataLayer", "SchoolIntelligentWeb.DataLayer\SchoolIntelligentWeb.DataLayer.csproj", "{E7509295-43B0-416F-84FD-A10B42D873D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIntelligentWeb.Utilities", "SchoolIntelligentWeb.Utilities\SchoolIntelligentWeb.Utilities.csproj", "{D19B5B76-7EBC-4518-BAB8-A6EF30B9E9D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIntelligentWeb.ServiceLayer", "SchoolIntelligentWeb.ServiceLayer\SchoolIntelligentWeb.ServiceLayer.csproj", "{E0350B63-D179-4953-9122-A8BCC792EC96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIntelligentWeb.Filters", "SchoolIntelligentWeb.Filters\SchoolIntelligentWeb.Filters.csproj", "{AD4B8FD5-ED74-4D5E-9448-050C7809BFE6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://videochatonline.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SchoolIntelligentWeb.DataLayer\\SchoolIntelligentWeb.DataLayer.csproj
+		SccProjectName1 = SchoolIntelligentWeb.DataLayer
+		SccLocalPath1 = SchoolIntelligentWeb.DataLayer
+		SccProjectUniqueName2 = SchoolIntelligentWeb.DomainClasses\\SchoolIntelligentWeb.DomainClasses.csproj
+		SccProjectName2 = SchoolIntelligentWeb.DomainClasses
+		SccLocalPath2 = SchoolIntelligentWeb.DomainClasses
+		SccProjectUniqueName3 = SchoolIntelligentWeb.Filters\\SchoolIntelligentWeb.Filters.csproj
+		SccProjectName3 = SchoolIntelligentWeb.Filters
+		SccLocalPath3 = SchoolIntelligentWeb.Filters
+		SccProjectUniqueName4 = SchoolIntelligentWeb.ServiceLayer\\SchoolIntelligentWeb.ServiceLayer.csproj
+		SccProjectName4 = SchoolIntelligentWeb.ServiceLayer
+		SccLocalPath4 = SchoolIntelligentWeb.ServiceLayer
+		SccProjectUniqueName5 = SchoolIntelligentWeb.Utilities\\SchoolIntelligentWeb.Utilities.csproj
+		SccProjectName5 = SchoolIntelligentWeb.Utilities
+		SccLocalPath5 = SchoolIntelligentWeb.Utilities
+		SccProjectUniqueName6 = SchoolIntelligentWeb\\SchoolIntelligentWeb.csproj
+		SccProjectName6 = SchoolIntelligentWeb
+		SccLocalPath6 = SchoolIntelligentWeb
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45A42420-A85F-4EC6-B526-F2E27C9D172C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A42420-A85F-4EC6-B526-F2E27C9D172C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A42420-A85F-4EC6-B526-F2E27C9D172C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A42420-A85F-4EC6-B526-F2E27C9D172C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E9631F-35F7-4321-9FFF-C5F1EDC586FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E9631F-35F7-4321-9FFF-C5F1EDC586FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E9631F-35F7-4321-9FFF-C5F1EDC586FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E9631F-35F7-4321-9FFF-C5F1EDC586FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7509295-43B0-416F-84FD-A10B42D873D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7509295-43B0-416F-84FD-A10B42D873D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7509295-43B0-416F-84FD-A10B42D873D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7509295-43B0-416F-84FD-A10B42D873D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19B5B76-7EBC-4518-BAB8-A6EF30B9E9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19B5B76-7EBC-4518-BAB8-A6EF30B9E9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19B5B76-7EBC-4518-BAB8-A6EF30B9E9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19B5B76-7EBC-4518-BAB8-A6EF30B9E9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0350B63-D179-4953-9122-A8BCC792EC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0350B63-D179-4953-9122-A8BCC792EC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0350B63-D179-4953-9122-A8BCC792EC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0350B63-D179-4953-9122-A8BCC792EC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4B8FD5-ED74-4D5E-9448-050C7809BFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4B8FD5-ED74-4D5E-9448-050C7809BFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4B8FD5-ED74-4D5E-9448-050C7809BFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4B8FD5-ED74-4D5E-9448-050C7809BFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

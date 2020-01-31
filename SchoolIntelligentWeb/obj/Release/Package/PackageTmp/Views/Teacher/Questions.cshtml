@@ -1,0 +1,484 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.QuestionViewModel
+@{
+    ViewBag.Title = "Questions";
+    Layout = "~/Views/Shared/_LayoutTeacherPanel.cshtml";
+}
+
+<style>
+    .file {
+        visibility: hidden;
+        position: absolute;
+    }
+</style>
+
+<link href="~/Content/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="container" id="loadpage">
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;">اطلاعات آزمون </button>
+    <br />
+    <br />
+<div>
+    
+    <div class="page-alerts" style="display: none" id="erroemodel">
+        <div class="alert alert-danger page-alert" id="Messagealert">
+            <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <div id="message" class="text-center">
+               
+            </div>
+
+        </div>
+    </div>
+    <div class="page-alerts" style="display: none" id="successmodel">
+        <div class="alert alert-success page-alert" id="Messagealertsuccess">
+            <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <div id="messagesuccess" class="text-center">
+                درج با موفقیت انجام شد
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">توضیحات آزمون</p>
+        </div>
+        <div class="col-md-10 pull-right">
+            <input class="form-control" name="Description" id="Description" style="text-align: right;" placeholder="توضیحات آزمون را وارد کنید" value="@Model.TestInfo.Text"/>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">انتخاب کلاس</p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <input class="form-control" name="classname" id="classname" style="text-align: right;" type="text" disabled value="@Model.TestInfo.Lesson"/>
+        </div>
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">مدت آزمون</p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <input class="form-control" name="Testtime" id="Testtime" style="text-align: right;" type="number" value="@Model.TestInfo.Duration"/>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">زمان شروع</p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#Starttime" data-trigger="click" data-enabletimepicker="true">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </div>
+                    <input type="text" class="form-control" style="text-align: right;" id="Starttime" name="Starttime" placeholder="تاریخ به همراه زمان" value="@Model.TestInfo.StartDate"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">زمان پایان</p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon" data-mddatetimepicker="true" data-targetselector="#Endtime" data-trigger="click" data-enabletimepicker="true">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </div>
+                    <input type="text" class="form-control" style="text-align: right;" id="Endtime" name="Endtime" placeholder="تاریخ به همراه زمان" value="@Model.TestInfo.FinishDate"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">زمان تاخیر</p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <input type="number" class="form-control" name="Delaytime" id="Delaytime" style="text-align: right;" value="@Model.TestInfo.MaxDelay"/>
+        </div>
+        <div class="col-md-2 pull-right">
+            <p class="text-center" style="font-size: 18px;">امتیاز آزمون</p>
+        </div>
+        <div class="col-md-4 pull-right">
+            <input type="number" class="form-control" name="TestGrde" id="TestGrade" style="text-align: right;" value="@Model.TestInfo.TestGrade" onkeypress="validate(event)" />
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-lg-6">
+            <a class="btn btn-primary btn-block text-center" id="inserttest" onclick="updatetest(@Model.TestInfo.Id)">ویرایش</a>
+        </div>
+        <div class="col-lg-6">
+            <a class="btn btn-warning btn-block text-center" id="print" onclick="copyquestions(@Model.TestInfo.Id)">پرینت سوالات</a>
+        </div>
+    </div>
+</div>
+    <hr />
+    <button type="button" class="btn btn-success ribbon buttonmenu" style="background-color: #16a085;"> افزودن سوال جدید </button>
+    <br />
+    <br />
+<div class="col-lg-12">
+    <a class="btn btn-block btn-success text-center" onclick="InsertQuestion()" id="btnshow"> سوال جدید</a>
+</div>
+@using (Html.BeginForm("AddQuestion", "Teacher", FormMethod.Post, new { enctype = "multipart/form-data", id = "myUploadForm"}))
+{
+    
+    <div class="page-alerts" style="display: none" id="erroemodelquestion">
+        <div class="alert alert-danger page-alert" id="Messagealert">
+            <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <div id="messagequestion" class="text-center">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="page-alerts" style="display: none" id="successmodelquestion">
+        <div class="alert alert-success page-alert" id="Messagealertsuccess">
+            <button type="button" class="close pull-left"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <div id="messagesuccessquestion" class="text-center">
+                بروزرسانی با موفقیت انجام شد
+            </div>
+
+        </div>
+    </div>
+    <input type="number" name="testid" id="testid" style="display: none;" value="@Model.TestInfo.Id" />
+    <div id="newtest" style="display: none;">
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">متن سوال</p>
+            </div>
+            <div class="col-md-10 pull-right">
+                <textarea class="form-control" name="Description" rows="5" style="text-align: right;" placeholder="متن سوال مورد نظر خود را وارد کنید"></textarea>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">انتخاب عکس متن سوال</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <div class="form-group">
+                    <input type="file" name="QuestionImage" class="file">
+                    <div class="input-group col-xs-12">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                        <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                        <span class="input-group-btn">
+                            <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">نوع سوال</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <select class="input-large form-control" name="WhitchQuestion" id="WhitchQuestion" style="text-align: center;" onchange="Choosetype()">
+                    <option value="2" style="text-align: center;" class="text-center"></option>
+                    <option value="0" style="text-align: center;" class="text-center">تستی</option>
+                    <option value="1" style="text-align: center;" class="text-center"> تشریحی</option>
+
+                </select>
+
+            </div>
+            
+            <div class="col-md-2 pull-right">
+                <p class="text-center" style="font-size: 18px;">امتیاز سوال</p>
+            </div>
+            <div class="col-md-4 pull-right">
+                <input type="number" class="form-control" style="text-align: right;" id="scoretest" name="scoretest" placeholder="نمره سوال مورد نظر را وارد کنید" value="20" onkeypress="validate(event)" />
+            </div>
+        </div>
+        <br />
+        <div id="tashrihitest" style="display: none;">
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <p class="text-center" style="font-size: 18px;">متن جواب</p>
+                </div>
+                <div class="col-md-10 pull-right">
+                    <textarea class="form-control" name="AnswerDescription" rows="5" style="text-align: right;" placeholder="متن جواب مورد نظر خود را وارد کنید"></textarea>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <p class="text-center" style="font-size: 18px;">انتخاب عکس جواب سوال</p>
+                </div>
+                <div class="col-md-4 pull-right">
+                    <div class="form-group">
+                        <input type="file" name="AnswerImage" class="file">
+                        <div class="input-group col-xs-12">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                            <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                            <span class="input-group-btn">
+                                <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div id="testi" style="display: none;">
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <p class="text-center" style="font-size: 18px;">گزینه درست</p>
+                </div>
+                <div class="col-md-10 pull-right">
+                    <input class="form-control" name="answerkey" id="answerkey" style="text-align: right;" type="number" onkeypress="validate(event)" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <p class="text-center" style="font-size: 18px;">انتخاب عکس جواب سوال</p>
+                </div>
+                <div class="col-md-4 pull-right">
+                    <div class="form-group">
+                        <input type="file" name="AnswerImagetest" class="file">
+                        <div class="input-group col-xs-12">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                            <input type="text" class="form-control input-lg" disabled placeholder="انتخاب عکس">
+                            <span class="input-group-btn">
+                                <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> انتخاب</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <button class="btn btn-primary btn-block text-center">درج سوال جدید</button>
+        </div>
+    </div>
+}
+    <div id="questionsection">
+        @Html.Partial("_AddQuestionPartial", Model)
+    </div>
+
+    <hr />
+    @Html.Partial("_QuestionPartial", Model)
+</div>
+
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jalaali.js"></script>
+<script src="~/Scripts/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+<script src="~/Scripts/AjaxForm/jquery.form.min.js"></script>
+<script>
+    $("#myUploadForm").ajaxForm();
+    
+    
+
+
+    function validate(evt) {
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+        var regex = /[0-9]|\./;
+        if (!regex.test(key)) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+
+    $(function () {
+        document.getElementById("loadpage").scrollIntoView({ behavior: 'smooth' });
+        $('#Starttime').MdPersianDateTimePicker({
+            Placement: 'bottom', // default is 'bottom'
+            Trigger: 'focus', // default is 'focus',
+            EnableTimePicker: true, // default is true,
+            TargetSelector: '', // default is empty,
+            GroupId: '', // default is empty,
+            ToDate: false, // default is false,
+            FromDate: false, // default is false,
+        });
+        $('#Endtime').MdPersianDateTimePicker({
+            Placement: 'bottom', // default is 'bottom'
+            Trigger: 'focus', // default is 'focus',
+            EnableTimePicker: true, // default is true,
+            TargetSelector: '', // default is empty,
+            GroupId: '', // default is empty,
+            ToDate: false, // default is false,
+            FromDate: true, // default is false,
+        });
+
+        $('#Messagealert').hide('slow');
+        //Show alert
+        $('button[data-toggle="page-alert"]').click(function (e) {
+            e.preventDefault();
+            var id = $(this).attr('data-toggle-id');
+            var alert = $('#Messagealertsuccess');
+            var timeOut;
+            alert.appendTo('.page-alerts');
+            alert.slideDown();
+
+            //Is autoclosing alert
+            var delay = $(this).attr('data-delay');
+            if (delay != undefined) {
+                delay = parseInt(delay);
+                clearTimeout(2000);
+                timeOut = window.setTimeout(function () {
+                    alert.slideUp();
+                }, delay);
+            }
+        });
+
+        $('.page-alert .close').click(function (e) {
+            e.preventDefault();
+            $(this).closest('.page-alert').slideUp();
+        });
+
+        //Clear all
+        $('.clear-page-alerts').click(function (e) {
+            e.preventDefault();
+            $('.page-alert').slideUp();
+        });
+
+
+    });
+
+    var questionid;
+    function updatetest(testid) {
+        $.ajax({
+            url: "/Teacher/UpdateTest?testid=" + testid + "&description=" + $('#Description').val() + "&testtime=" + $('#Testtime').val() + "&starttime=" + $('#Starttime').val() + "&endtime=" + $('#Endtime').val() + "&delaytime=" + $('#Delaytime').val() + "&testGrde=" + $('#TestGrade').val(),
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result == 1) {
+                    DoSomethingSuccess();
+                }
+                else if (result == 0) {
+                    DoSomethingError();
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+
+    function DoSomethingSuccess() {
+        $('#successmodel').slideDown("slow");
+
+    }
+
+    function DoSomethingError() {
+        $('#erroemodel').slideDown("slow");
+
+    }
+    function deletequestion(questionid, testid) {
+        $.ajax({
+            url: "/Teacher/DeleteQuestion?questionid=" + questionid + "&testid=" + testid,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    $("#tabletest").html(result.Name);
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+
+
+
+
+    function updatequestion(questionid, testid) {
+        $.ajax({
+            url: "/Teacher/UpdateQuestion?questionid=" + questionid,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    $("#questionsection").html(result.Name);
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+
+    }
+
+    $(function () {
+    });
+    function InsertQuestion() {
+        $('#btnshow').fadeOut("slow");
+        $('#newtest').slideDown("slow");
+
+    }
+
+    function Choosetype() {
+        var item = $('#WhitchQuestion').val();
+        if (item == 1) {
+            $('#tashrihitest').slideDown("slow");
+            $('#testi').hide("slow");
+        } else if (item == 0) {
+            $('#testi').slideDown("slow");
+            $('#tashrihitest').hide("slow");
+        }
+    }
+
+
+    
+    $(document).on('click', '.browse', function () {
+        var file = $(this).parent().parent().parent().find('.file');
+        file.trigger('click');
+    });
+    $(document).on('change', '.file', function () {
+        $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+    });
+
+
+    function ChangeToNewItem() {
+        $('#updatetest').hide("slow");
+        $('#newtest').slideDown("slow");
+    }
+
+
+    function copyquestions(testid) {
+        window.location.href = '/Report?testid='+testid;
+    }
+
+    //----------------------------------------------------------
+
+
+    function deleteMultichoise(id, questionid) {
+        $.ajax({
+            url: "/Teacher/DeleteMultichoise?choiseid=" + id + "&questionid=" + questionid,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    $("#tableMultichoise").html(result.Name);
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+
+    function Additemtochoise() {
+        $.ajax({
+            url: "/Teacher/AddMultichoise?text=" + $('#answermultiplytext').val() + "&questionid=" + $('#questionid').val(),
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                if (result.Id == 1) {
+                    $("#tableMultichoise").html(result.Name);
+                }
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+</script>

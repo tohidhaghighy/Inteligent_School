@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45A42420-A85F-4EC6-B526-F2E27C9D172C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolIntelligentWeb</RootNamespace>
+    <AssemblyName>SchoolIntelligentWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LibExcel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\LibExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mobile, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.MobileDesign, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.MobileDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.MvcMobile, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.MvcMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebDesign, Version=2017.1.7.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2017.1.7\lib\net40\Stimulsoft.Report.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AndroidController.cs" />
+    <Compile Include="Controllers\ChatController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\FilesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginAppController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\OnlineClassController.cs" />
+    <Compile Include="Controllers\PanelController.cs" />
+    <Compile Include="Controllers\ParentController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\SMSController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
+    <Compile Include="Controllers\TestAnswerController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\TestQuestionsController.cs" />
+    <Compile Include="Controllers\UpdateTokenController.cs" />
+    <Compile Include="Controllers\UploadAppController.cs" />
+    <Compile Include="Controllers\UploadServerController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Hubs\WebRtcHub.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CallOffer.cs" />
+    <Compile Include="Models\CustomMultipartFormDataStreamProvider.cs" />
+    <Compile Include="Models\Groups.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserCall.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\LibExcel.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\SchoolIntelligentWeb.DataLayer.dll" />
+    <Content Include="bin\SchoolIntelligentWeb.DataLayer.pdb" />
+    <Content Include="bin\SchoolIntelligentWeb.dll" />
+    <Content Include="bin\SchoolIntelligentWeb.DomainClasses.dll" />
+    <Content Include="bin\SchoolIntelligentWeb.DomainClasses.pdb" />
+    <Content Include="bin\SchoolIntelligentWeb.pdb" />
+    <Content Include="bin\SchoolIntelligentWeb.ServiceLayer.dll" />
+    <Content Include="bin\SchoolIntelligentWeb.ServiceLayer.pdb" />
+    <Content Include="bin\SchoolIntelligentWeb.Utilities.dll" />
+    <Content Include="bin\SchoolIntelligentWeb.Utilities.pdb" />
+    <Content Include="bin\Stimulsoft.Base.dll" />
+    <Content Include="bin\Stimulsoft.Base.pdb" />
+    <Content Include="bin\Stimulsoft.Base.xml" />
+    <Content Include="bin\Stimulsoft.Report.Check.dll" />
+    <Content Include="bin\Stimulsoft.Report.Check.pdb" />
+    <Content Include="bin\Stimulsoft.Report.Check.xml" />
+    <Content Include="bin\Stimulsoft.Report.dll" />
+    <Content Include="bin\Stimulsoft.Report.Helper.dll" />
+    <Content Include="bin\Stimulsoft.Report.Helper.pdb" />
+    <Content Include="bin\Stimulsoft.Report.Helper.xml" />
+    <Content Include="bin\Stimulsoft.Report.Mobile.dll" />
+    <Content Include="bin\Stimulsoft.Report.Mobile.pdb" />
+    <Content Include="bin\Stimulsoft.Report.Mobile.xml" />
+    <Content Include="bin\Stimulsoft.Report.MobileDesign.dll" />
+    <Content Include="bin\Stimulsoft.Report.MobileDesign.pdb" />
+    <Content Include="bin\Stimulsoft.Report.MobileDesign.xml" />
+    <Content Include="bin\Stimulsoft.Report.Mvc.dll" />
+    <Content Include="bin\Stimulsoft.Report.Mvc.pdb" />
+    <Content Include="bin\Stimulsoft.Report.Mvc.xml" />
+    <Content Include="bin\Stimulsoft.Report.MvcMobile.dll" />
+    <Content Include="bin\Stimulsoft.Report.MvcMobile.pdb" />
+    <Content Include="bin\Stimulsoft.Report.MvcMobile.xml" />
+    <Content Include="bin\Stimulsoft.Report.pdb" />
+    <Content Include="bin\Stimulsoft.Report.Web.dll" />
+    <Content Include="bin\Stimulsoft.Report.Web.pdb" />
+    <Content Include="bin\Stimulsoft.Report.Web.xml" />
+    <Content Include="bin\Stimulsoft.Report.WebDesign.dll" />
+    <Content Include="bin\Stimulsoft.Report.WebDesign.pdb" />
+    <Content Include="bin\Stimulsoft.Report.WebDesign.xml" />
+    <Content Include="bin\Stimulsoft.Report.xml" />
+    <Content Include="bin\System.Net.Http.Extensions.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Net.Http.Primitives.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebApiContrib.Formatting.JavaScriptSerializer.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Error\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\Error\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\Error\css\respons.css" />
+    <Content Include="Content\Error\css\style.css" />
+    <Content Include="Content\Error\img\404-dark.png" />
+    <Content Include="Content\Error\img\404-light.gif" />
+    <Content Include="Content\Error\img\ajax-loader.gif" />
+    <Content Include="Content\Error\img\bg_btn.png" />
+    <Content Include="Content\Error\img\btn.png" />
+    <Content Include="Content\Error\img\favicons\favicon.png" />
+    <Content Include="Content\Error\img\favicons\favicon114x114.png" />
+    <Content Include="Content\Error\img\favicons\favicon144x144.png" />
+    <Content Include="Content\Error\img\favicons\favicon57x57.png" />
+    <Content Include="Content\Error\img\favicons\favicon72x72.png" />
+    <Content Include="Content\Error\js\jquery-2.1.1.js" />
+    <Content Include="Content\Error\js\jquery-2.1.1.min.js" />
+    <Content Include="Content\Error\js\jquery.nicescroll.min.js" />
+    <Content Include="Content\Error\js\modernizr.custom.js" />
+    <Content Include="Content\Error\js\scripts.js" />
+    <Content Include="Content\icon.png" />
+    <Content Include="Content\iconpng.png" />
+    <Content Include="Content\MdBootstrapPersianDateTimePicker\jquery.Bootstrap-PersianDateTimePicker.css" />
+    <Content Include="Content\Report\fa.xml" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Design\assets\video.mp4" />
+    <Content Include="Design\css\responsive.css" />
+    <Content Include="Design\css\style.css" />
+    <Content Include="Design\design.css" />
+    <Content Include="Design\fonts\flaticon.css" />
+    <Content Include="Design\fonts\flaticon.html" />
+    <Content Include="Design\fonts\flaticon.svg" />
+    <Content Include="Design\fonts\Walkway_Bold-webfont.svg" />
+    <Content Include="Design\fonts\Walkway_SemiBold-webfont.svg" />
+    <Content Include="Design\fonts\Walkway_UltraBold-webfont.svg" />
+    <Content Include="Design\images\1.jpg" />
+    <Content Include="Design\images\2.jpg" />
+    <Content Include="Design\images\3.jpg" />
+    <Content Include="Design\images\4.jpg" />
+    <Content Include="Design\images\5.jpg" />
+    <Content Include="Design\images\6.jpg" />
+    <Content Include="Design\images\7.jpg" />
+    <Content Include="Design\images\8.jpg" />
+    <Content Include="Design\images\9.jpg" />
+    <Content Include="Design\images\appstore.png" />
+    <Content Include="Design\images\appstore2.png" />
+    <Content Include="Design\images\bg.jpg" />
+    <Content Include="Design\images\bgs.jpg" />
+    <Content Include="Design\images\bg_direction_nav.png" />
+    <Content Include="Design\images\fav.png" />
+    <Content Include="Design\images\favicon.ico" />
+    <Content Include="Design\images\hand-mockup.png" />
+    <Content Include="Design\images\hand2.png" />
+    <Content Include="Design\images\logo.png" />
+    <Content Include="Design\images\menu-logo.png" />
+    <Content Include="Design\images\playstore.png" />
+    <Content Include="Design\images\playstore2.png" />
+    <Content Include="Design\index.html" />
+    <Content Include="Design\js\cbpFWTabs.js" />
+    <Content Include="Design\js\jquery.easings.min.js" />
+    <Content Include="Design\js\jquery.fullPage.js" />
+    <Content Include="Design\js\jquery.min.js" />
+    <Content Include="Design\js\jquery.sidr.min.js" />
+    <Content Include="Design\js\jquery.slimscroll.min.js" />
+    <Content Include="Design\js\scripts.js" />
+    <Content Include="Design\js\video.js" />
+    <Content Include="Error.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\Yekan.svg" />
+    <Content Include="icon.ico" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\class.png" />
+    <Content Include="Images\homework.png" />
+    <Content Include="Images\image.png" />
+    <Content Include="Images\classroom.jpg" />
+    <Content Include="Images\virtual_classroom.jpg" />
+    <Content Include="Images\windowsclassroom.jpg" />
+    <Content Include="Localization\ar.xml" />
+    <Content Include="Localization\be.xml" />
+    <Content Include="Localization\bg.xml" />
+    <Content Include="Localization\ca-ES.xml" />
+    <Content Include="Localization\cs.xml" />
+    <Content Include="Localization\de.ext.xml" />
+    <Content Include="Localization\de.xml" />
+    <Content Include="Localization\el-GR.xml" />
+    <Content Include="Localization\en-GB.xml" />
+    <Content Include="Localization\en.ext.xml" />
+    <Content Include="Localization\en.xml" />
+    <Content Include="Localization\es.xml" />
+    <Content Include="Localization\eu-ES.xml" />
+    <Content Include="Localization\fa.xml" />
+    <Content Include="Localization\fr.ext.xml" />
+    <Content Include="Localization\fr.xml" />
+    <Content Include="Localization\gl-ES.xml" />
+    <Content Include="Localization\hr.xml" />
+    <Content Include="Localization\hu.xml" />
+    <Content Include="Localization\id.xml" />
+    <Content Include="Localization\it.xml" />
+    <Content Include="Localization\ka.xml" />
+    <Content Include="Localization\Lt-sr-SP.xml" />
+    <Content Include="Localization\lt.xml" />
+    <Content Include="Localization\nb-NO.xml" />
+    <Content Include="Localization\nl.xml" />
+    <Content Include="Localization\pl.xml" />
+    <Content Include="Localization\pt-BR.xml" />
+    <Content Include="Localization\pt.xml" />
+    <Content Include="Localization\ro.xml" />
+    <Content Include="Localization\ru.ext.xml" />
+    <Content Include="Localization\ru.xml" />
+    <Content Include="Localization\sk.xml" />
+    <Content Include="Localization\sv.ext.xml" />
+    <Content Include="Localization\sv.xml" />
+    <Content Include="Localization\tr.xml" />
+    <Content Include="Localization\uk.xml" />
+    <Content Include="Localization\zh-CHS.xml" />
+    <Content Include="Localization\zh-CHT.xml" />
+    <Content Include="Scripts\AjaxForm\jquery.form.js" />
+    <Content Include="Scripts\AjaxForm\jquery.form.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\chartjs\Chart.Bar.js" />
+    <Content Include="Scripts\chartjs\Chart.Core.js" />
+    <Content Include="Scripts\chartjs\Chart.Doughnut.js" />
+    <Content Include="Scripts\chartjs\Chart.Line.js" />
+    <Content Include="Scripts\chartjs\Chart.PolarArea.js" />
+    <Content Include="Scripts\chartjs\Chart.Radar.js" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap-theme.css" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap-theme.min.css" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap.css" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap.min.css" />
+    <Content Include="Scripts\Chatroom\Content\Popup\sweetalert.css" />
+    <Content Include="Scripts\Chatroom\Content\Popup\sweetalert.min.js" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\alertify\alertify.core.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\alertify\alertify.default.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\css\bootstrap.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\js\bootstrap.js" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\fonts\icomoon.dev.svg" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\fonts\icomoon.svg" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\index.html" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\license.txt" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\lte-ie7.js" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\style.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\Site.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery-ui.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.all.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.base.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.button.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.core.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.slider.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\jquery.ui.theme.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Scripts\Chatroom\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\Chatroom\Scripts\AjaxForm\jquery.form.js" />
+    <Content Include="Scripts\Chatroom\Scripts\AjaxForm\jquery.form.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\bootstrap.js" />
+    <Content Include="Scripts\Chatroom\Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jq3.2.1.js" />
+    <None Include="bin\SchoolIntelligentWeb.dll.config" />
+    <None Include="Scripts\Chatroom\Scripts\Jquary\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-1.12.4.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-2.1.1.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-ui-1.9.2.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.cookie.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.nicescroll.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\Chatroom\Scripts\Jquary\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.validate.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.validate.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquerysession.js" />
+    <None Include="Scripts\Chatroom\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery.signalR-2.2.2.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\Login\stylelogin.css" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\adapter.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\alertify.min.js" />
+    <None Include="Scripts\Chatroom\Scripts\WebRTC\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery-1.7.1.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.signalR-1.0.0-rc2.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.signalR-1.0.0-rc2.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\Chatroom\Scripts\WebRTC\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.validate.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.validate.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\knockout-2.2.1.debug.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\knockout-2.2.1.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\knockout.mapping-latest.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\modernizr-2.5.3.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\webrtcdemo\app.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\webrtcdemo\connectionManager.js" />
+    <Content Include="Scripts\Chatroom\Scripts\WebRTC\webrtcdemo\viewModel.js" />
+    <None Include="Scripts\Chatroom\Scripts\WebRTC\_references.js" />
+    <Content Include="Scripts\Chatroom\Script\archive.png" />
+    <Content Include="Scripts\Chatroom\Script\archivecancel.png" />
+    <Content Include="Scripts\Chatroom\Script\build.js" />
+    <Content Include="Scripts\Chatroom\Script\chat.css" />
+    <Content Include="Scripts\Chatroom\Script\chat.png" />
+    <Content Include="Scripts\Chatroom\Script\download-button.png" />
+    <Content Include="Scripts\Chatroom\Script\exit%281%29.png" />
+    <Content Include="Scripts\Chatroom\Script\eye.png" />
+    <Content Include="Scripts\Chatroom\Script\eyecancel.png" />
+    <Content Include="Scripts\Chatroom\Script\hold.png" />
+    <Content Include="Scripts\Chatroom\Script\holdcancel.png" />
+    <Content Include="Scripts\Chatroom\Script\listofdesign.css" />
+    <Content Include="Scripts\Chatroom\Script\microphone.png" />
+    <Content Include="Scripts\Chatroom\Script\muted.png" />
+    <Content Include="Scripts\Chatroom\Script\out\Maincamera.js" />
+    <Content Include="Scripts\Chatroom\Script\out\Maincameraforuser.js" />
+    <Content Include="Scripts\Chatroom\Script\out\simplewebrtc-with-adapter.bundle.js" />
+    <Content Include="Scripts\Chatroom\Script\out\simplewebrtc.bundle.js" />
+    <Content Include="Scripts\Chatroom\Script\screen-cancel.png" />
+    <Content Include="Scripts\Chatroom\Script\screen.png" />
+    <Content Include="Scripts\Chatroom\Script\send.png" />
+    <Content Include="Scripts\Chatroom\Script\shadow.css" />
+    <Content Include="Scripts\Chatroom\Script\src\peer.js" />
+    <Content Include="Scripts\Chatroom\Script\src\simplewebrtc.js" />
+    <Content Include="Scripts\Chatroom\Script\src\socketioconnection.js" />
+    <Content Include="Scripts\Chatroom\Script\src\webrtc.js" />
+    <Content Include="Scripts\Chatroom\Script\test\index.html" />
+    <Content Include="Scripts\Chatroom\Script\test\selenium\index.js" />
+    <Content Include="Scripts\Chatroom\Script\test\selenium\p2p.js" />
+    <Content Include="Scripts\Chatroom\Script\test\selenium\selenium-lib.js" />
+    <Content Include="Scripts\Chatroom\Script\test\selenium\three.js" />
+    <Content Include="Scripts\Chatroom\Script\users-group.png" />
+    <Content Include="Scripts\Chatroom\Script\video-camera-cancel.png" />
+    <Content Include="Scripts\Chatroom\Script\video-camera.png" />
+    <Content Include="Scripts\Chatroom\Upload\201709041142292421005.PNG" />
+    <Content Include="Scripts\Chatroom\Upload\201709041144423337207.PNG" />
+    <Content Include="Scripts\Chatroom\Upload\201709041146141684118.PNG" />
+    <Content Include="Scripts\Chatroom\Upload\201709041147413169010.jpg" />
+    <Content Include="Scripts\Chatroom\Upload\201709041149374879150.PNG" />
+    <Content Include="Scripts\dropzone\basic.css" />
+    <Content Include="Scripts\dropzone\basic.min.css" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.js" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone\dropzone.css" />
+    <Content Include="Scripts\dropzone\dropzone.js" />
+    <Content Include="Scripts\dropzone\dropzone.min.css" />
+    <Content Include="Scripts\dropzone\dropzone.min.js" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\Report\QuestionTest.mrt" />
+    <Content Include="fonts\BBadr.eot" />
+    <Content Include="fonts\BBadr.ttf" />
+    <Content Include="fonts\BBadr.woff" />
+    <Content Include="fonts\BYekan.eot" />
+    <Content Include="fonts\BYekan.ttf" />
+    <Content Include="fonts\BYekan.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\Yekan.eot" />
+    <Content Include="fonts\Yekan.ttf" />
+    <Content Include="fonts\Yekan.woff" />
+    <Content Include="Content\Error\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\Error\js\jquery-2.1.1.min.map" />
+    <Content Include="Design\assets\Thumbs.db" />
+    <Content Include="Design\assets\video.webm" />
+    <Content Include="Design\fonts\B-Morvarid.ttf" />
+    <Content Include="Design\fonts\B-Titr.ttf" />
+    <Content Include="Design\fonts\BEsfehan.ttf" />
+    <Content Include="Design\fonts\BEsfehanBold.eot" />
+    <Content Include="Design\fonts\BEsfehanBold.woff" />
+    <Content Include="Design\fonts\BTITRBD.TTF" />
+    <Content Include="Design\fonts\Far.ttf" />
+    <Content Include="Design\fonts\flaticon.eot" />
+    <Content Include="Design\fonts\flaticon.ttf" />
+    <Content Include="Design\fonts\flaticon.woff" />
+    <Content Include="Design\fonts\Titr.ttf" />
+    <Content Include="Design\fonts\Walkway_Bold-webfont.eot" />
+    <Content Include="Design\fonts\Walkway_Bold-webfont.ttf" />
+    <Content Include="Design\fonts\Walkway_Bold-webfont.woff" />
+    <Content Include="Design\fonts\Walkway_SemiBold-webfont.eot" />
+    <Content Include="Design\fonts\Walkway_SemiBold-webfont.ttf" />
+    <Content Include="Design\fonts\Walkway_SemiBold-webfont.woff" />
+    <Content Include="Design\fonts\Walkway_UltraBold-webfont.eot" />
+    <Content Include="Design\fonts\Walkway_UltraBold-webfont.ttf" />
+    <Content Include="Design\fonts\Walkway_UltraBold-webfont.woff" />
+    <Content Include="Design\fonts\wYekan.eot" />
+    <Content Include="Design\fonts\wYekan.ttf" />
+    <Content Include="Design\fonts\wYekan.woff" />
+    <Content Include="Design\images\Thumbs.db" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap-theme.min.css.map" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap.css.map" />
+    <Content Include="Scripts\Chatroom\Content\bootstrap.min.css.map" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\fonts\icomoon.eot" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Scripts\Chatroom\Content\WebRTC\icomoon\fonts\icomoon.woff" />
+    <Content Include="Scripts\Chatroom\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\Chatroom\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\Chatroom\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\Chatroom\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-1.12.4.min.map" />
+    <Content Include="Scripts\Chatroom\Scripts\Jquary\jquery-2.1.1.min.map" />
+    <Content Include="Scripts\Chatroom\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\Chatroom\Script\test\run-selenium" />
+    <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\jquery.nicescroll.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
+    <Content Include="Scripts\MdBootstrapPersianDateTimePicker\jalaali.js" />
+    <Content Include="Scripts\MdBootstrapPersianDateTimePicker\jquery.Bootstrap-PersianDateTimePicker.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
+    <Content Include="Scripts\Noty\jquery.noty.js" />
+    <Content Include="Content\buttonmenu.css" />
+    <Content Include="Content\CarouselFirstPage.css" />
+    <Content Include="Content\Chat.css" />
+    <Content Include="Content\footer-distributed-with-address-and-phones.css" />
+    <Content Include="Content\HeaderImage.css" />
+    <Content Include="Content\Login.css" />
+    <Content Include="Content\Membership.css" />
+    <Content Include="Content\NavbarFirstpage.css" />
+    <Content Include="Content\PanelItems.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\timeline.css" />
+    <Content Include="Content\Zigzag.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\ajaxloader.gif" />
+    <Content Include="Images\android.png" />
+    <Content Include="Images\apple.jpg" />
+    <Content Include="Images\exam.png" />
+    <Content Include="Images\folder.png" />
+    <Content Include="Images\question-list.png" />
+    <Content Include="Images\talking.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Scripts\CarouselFirstPage.js" />
+    <Content Include="Scripts\HeaderImage.js" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
+    <Content Include="Scripts\jquery-1.12.4.min.map" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.9.2.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquerysession.js" />
+    <Content Include="Scripts\Listjs.js" />
+    <Content Include="Scripts\LoginPage.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\PersianDateTimePicker\jquery-ui-datetimepicker.min.css" />
+    <Content Include="Scripts\PersianDateTimePicker\jquery-ui-datetimepicker.min.js" />
+    <Content Include="Scripts\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Scripts\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Scripts\redmond\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Scripts\redmond\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="test.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Shared\_LayoutMain.cshtml" />
+    <Content Include="Views\Shared\_LayoutPanel.cshtml" />
+    <Content Include="Views\Panel\Main.cshtml" />
+    <Content Include="Views\Panel\Grade.cshtml" />
+    <Content Include="Views\Panel\Exist.cshtml" />
+    <Content Include="Views\Panel\Files.cshtml" />
+    <Content Include="Views\Panel\schedule.cshtml" />
+    <Content Include="Views\Shared\_LayoutTeacherPanel.cshtml" />
+    <Content Include="Views\Teacher\Main.cshtml" />
+    <Content Include="Views\Teacher\Grade.cshtml" />
+    <Content Include="Views\Teacher\Exist.cshtml" />
+    <Content Include="Views\Teacher\Files.cshtml" />
+    <Content Include="Views\Teacher\Test.cshtml" />
+    <Content Include="Views\Teacher\schedule.cshtml" />
+    <Content Include="Views\Teacher\Questions.cshtml" />
+    <Content Include="Views\Teacher\_ExistPartial.cshtml" />
+    <Content Include="Views\Teacher\_GradePartial.cshtml" />
+    <Content Include="Views\Teacher\_FilePartial.cshtml" />
+    <Content Include="Views\Teacher\_TestPartial.cshtml" />
+    <Content Include="Views\Teacher\_QuestionPartial.cshtml" />
+    <Content Include="Views\Teacher\_AddQuestionPartial.cshtml" />
+    <Content Include="Views\Teacher\_MultichoiseQuestion.cshtml" />
+    <Content Include="Views\Teacher\ListofTestGrades.cshtml" />
+    <Content Include="Views\Panel\Home_Work.cshtml" />
+    <Content Include="Views\Panel\_HomeWorkPartial.cshtml" />
+    <Content Include="Views\Teacher\Homework.cshtml" />
+    <Content Include="Views\Teacher\_HomeworkPartial.cshtml" />
+    <Content Include="Views\Teacher\Correction.cshtml" />
+    <Content Include="Views\Teacher\_ListCorrection.cshtml" />
+    <Content Include="Views\Teacher\_GradeCorrectionPartial.cshtml" />
+    <Content Include="Views\Shared\_LayoutParentPanel.cshtml" />
+    <Content Include="Views\Parent\Parent.cshtml" />
+    <Content Include="Views\Report\Index.cshtml" />
+    <Content Include="Views\Home\ForgetPass.cshtml" />
+    <Content Include="Views\Parent\Grade.cshtml" />
+    <Content Include="Views\Parent\Exist.cshtml" />
+    <Content Include="Views\Parent\schedule.cshtml" />
+    <Content Include="Views\Parent\Report.cshtml" />
+    <Content Include="Views\Parent\Home_Work.cshtml" />
+    <Content Include="Views\Parent\Files.cshtml" />
+    <Content Include="Views\Parent\_HomeWorkPartial.cshtml" />
+    <Content Include="Views\Teacher\OnlineClass.cshtml" />
+    <Content Include="Views\Teacher\_OnlineClassPartial.cshtml" />
+    <Content Include="Views\Teacher\OnlineClassfiles.cshtml" />
+    <Content Include="Views\Teacher\_PartialOnlineClassFiles.cshtml" />
+    <Content Include="Views\Chat\Index.cshtml" />
+    <Content Include="Views\Chat\Student.cshtml" />
+    <Content Include="Views\Chat\_PartialChat.cshtml" />
+    <Content Include="Views\Chat\_PartialFiles.cshtml" />
+    <Content Include="Views\Chat\_PartialUsers.cshtml" />
+    <Content Include="Views\Chat\Login.cshtml" />
+    <Content Include="Views\Shared\_LayoutChat.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Files\Image\" />
+    <Folder Include="Files\Video\" />
+    <Folder Include="Images\student\" />
+    <Folder Include="Images\teacher\" />
+    <Folder Include="Upload\" />
+    <Folder Include="Views\Android\" />
+    <Folder Include="Views\File\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\OnlineClass\" />
+    <Folder Include="Views\question\" />
+    <Folder Include="Views\Student\" />
+    <Folder Include="Views\TestAnswer\" />
+    <Folder Include="Views\TestJavab\" />
+    <Folder Include="Views\TestQuestions\" />
+    <Folder Include="Views\UploadFileToServer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolIntelligentWeb.DataLayer\SchoolIntelligentWeb.DataLayer.csproj">
+      <Project>{e7509295-43b0-416f-84fd-a10b42d873d5}</Project>
+      <Name>SchoolIntelligentWeb.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolIntelligentWeb.DomainClasses\SchoolIntelligentWeb.DomainClasses.csproj">
+      <Project>{67E9631F-35F7-4321-9FFF-C5F1EDC586FB}</Project>
+      <Name>SchoolIntelligentWeb.DomainClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolIntelligentWeb.ServiceLayer\SchoolIntelligentWeb.ServiceLayer.csproj">
+      <Project>{e0350b63-d179-4953-9122-a8bcc792ec96}</Project>
+      <Name>SchoolIntelligentWeb.ServiceLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolIntelligentWeb.Utilities\SchoolIntelligentWeb.Utilities.csproj">
+      <Project>{d19b5b76-7ebc-4518-bab8-a6ef30b9e9d3}</Project>
+      <Name>SchoolIntelligentWeb.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3862</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3862/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

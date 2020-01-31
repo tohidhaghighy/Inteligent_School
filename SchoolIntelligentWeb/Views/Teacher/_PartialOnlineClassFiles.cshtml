@@ -1,0 +1,57 @@
+﻿@model SchoolIntelligentWeb.DomainClasses.ViewModels.Filepage
+
+
+<div class="row" id="tablefile" style="direction:rtl;">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table id="mytable" class="table table-bordred table-striped">
+                <thead>
+                <th class="text-center">توضیحات</th>
+                <th class="text-center">حذف</th>
+                </thead>
+                <tbody id="filelist">
+                    @{
+                        foreach (var item in Model.Onlineclass)
+                        {
+                            <tr>
+                                <td class="text-center">@item.Name</td>
+                              
+                                <td class="text-center">
+                                    <p>
+                                        <button class="btn btn-danger btn-xs" data-title="حذف" onclick="deletefile('@item.Id')"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </p>
+                                </td>
+                            </tr>
+                        }
+
+                    }
+
+
+                </tbody>
+            </table>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function downloadfile(data) {
+        window.location.href = data;
+    }
+
+
+    function deletefile(id) {
+        $.ajax({
+            url: "/OnlineClass/DeleteFiles?id=" + id,
+            type: "Post",
+            dataType: "Json",
+            success: function (result) {
+                window.location.reload();
+            },
+            error: function () {
+                alert("خطا!");
+            }
+        });
+    }
+</script>

@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="tohidhaghighi" />
+    <meta name="description" content="مدارس هوشمند" />
+    <meta name="keywords" content="InteligentSchool , طراحی سایت, اندروید مدارس, مدارس هوشمند, paraco, پارا کو, طراحی وب" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- SITE TITLE -->
+    <title>مدیریت هوشمند آموزشگاه ها و مدارس</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="~/Content/iconpng.png">
+
+    <!-- WEB FONTS -->
+    
+    @Styles.Render("~/Content/Logincss")
+    @Scripts.Render("~/Content/Loginjs")
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="~/Design/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/Design/fonts/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="~/Design/css/responsive.css" />
+    <!-- JQUERY -->
+    <script src="~/Design/js/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader"><img src="~/Content/icon.png" alt=""></div>
+
+
+    <!-- MAIN NAV -->
+    <a id="main-nav" href="#sidr"><span class="flaticon-menu9"></span></a>
+    <div id="sidr" class="sidr">
+
+        <!-- MAIN NAV LOGO -->
+        <a href="#" id="menu-logo"><img src="~/Content/icon.png" alt=""></a>
+
+        <!-- MAIN NAV LINKS -->
+        <ul>
+            <li>
+                <a href="#Home">ورود به سایت&nbsp;&nbsp;<span class="icons flaticon-house3"></span></a>
+            </li>
+            <li>
+                <a href="#Features">خدمات طراحی&nbsp;&nbsp;<span class="icons flaticon-drawer1"></span></a>
+            </li>
+            <li>
+                <a href="#About">اطلاعات بیشتر در مورد برنامه&nbsp;&nbsp;<span class="icons flaticon-cursor7"></span></a>
+            </li>
+            <li>
+                <a href="/chat/Login">ورود به چت روم&nbsp;&nbsp;<span class="icons flaticon-key9"></span></a>
+            </li>
+            <li>
+                <a href="#Clients">درباره ما&nbsp;&nbsp;<span class="icons flaticon-small72"></span></a>
+            </li>
+           
+        </ul>
+        <!-- END MAIN NAV LINKS -->
+    </div>
+    <!-- END MAIN NAV -->
+    <!-- PAGE LOGO -->
+    <div class="wrap">
+        <div id="logo">
+            <a href="#"><img src="~/Content/icon.png" alt=""> </a>
+        </div>
+    </div>
+    <!-- END PAGE LOGO -->
+    <!-- LANDING PAGE CONTENT -->
+    <div id="fullpage">
+
+        <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
+        <div class="wrap">
+            <div class="section-image">
+                <!-- Home IMAGE --><img src="~/Design/images/1.jpg" alt="Home">
+                <!-- Features IMAGE --><img src="~/Design/images/2.jpg" alt="Features">
+                <!-- About IMAGE --><img src="~/Design/images/9.jpg" alt="About">
+                <!-- Video IMAGE --><img src="~/Design/images/9.jpg" alt="Video">
+                <!-- Clients IMAGE --><img src="~/Design/images/7.jpg" alt="Clients">
+                <!-- Contact IMAGE --><img src="~/Design/images/7.jpg" alt="Contact">
+            </div>
+            <div id="hand"></div>
+        </div>
+        <!-- END RIGHT HAND & PHONE MOCK-UP -->
+        <!-- SECTION HOME -->
+        <div class="section " id="section0">
+            <div class="wrap">
+                @RenderBody()
+            </div>
+        </div>
+        <!-- END SECTION HOME -->
+        <!-- SECTION FEATURES -->
+        <div class="section " id="section1" >
+            <div class="wrap">
+                <div class="box">
+                    <!-- SECTION FEATURES CONTENT -->
+                    <h2>خدمات طراحی</h2>
+                    <p></p>
+                    <ul class="features">
+                        <li><a class="tooltip" href="#"></span> طراحی حرفه ای&nbsp;&nbsp;<span class="icon flaticon-desktop1"></span></a> </li>
+                        <li><a class="tooltip" href="#"></span> گرافیک زیبا&nbsp;&nbsp;<span class="icon flaticon-small62"></span></a> </li>
+                        <li><a class="tooltip" href="#"></span> امنیت بالا&nbsp;&nbsp;<span class="icon flaticon-adjust3"></span></a> </li>
+                    </ul>
+                    <ul class="features">
+                        <li><a class="tooltip" href="#"></span> کد نویسی استاندارد&nbsp;&nbsp;<span class="icon flaticon-interface19"></span></a> </li>
+                        <li><a class="tooltip" href="#"></span> پشتیبانی 24 ساعته&nbsp;&nbsp;<span class="icon flaticon-outlined3"></span></a> </li>
+                        <li><a class="tooltip" href="#"></span> آموزش کامل&nbsp;&nbsp;<span class="icon flaticon-lightbulb"></span></a> </li>
+                    </ul>
+                    <!-- END SECTION FEATURES CONTENT -->
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION FEATURES -->
+        <!-- SECTION ABOUT -->
+        <div class="section" id="section2">
+            <div class="wrap">
+                <div class="box">
+                    <!-- SECTION ABOUT CONTENT -->
+                    <h2>اطلاعات بیشتر درباره برنامه</h2>
+                    <div class="tabs tabs-style-linemove">
+                        <!-- TABS LINKS -->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#section-linemove-1"><span class="icon flaticon-lightbulb"></span><span> اهداف ما</span></a>
+                                </li>
+                                <li>
+                                    <a href="#section-linemove-2"><span class="icon flaticon-laptop3"></span><span> برنامه اندروید</span></a>
+                                </li>
+                                <li>
+                                    <a href="#section-linemove-3"><span class="icon flaticon-laptop3"></span><span> برنامه ویندوز</span></a>
+                                </li>
+                                <li>
+                                    <a href="#section-linemove-4"><span class="icon flaticon-laptop3"></span><span> وب سایت</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- END TABS LINKS -->
+                        <!-- TABS CONTENT -->
+                        <div class="content-wrap">
+
+                            <!-- TAB 1 -->
+                            <section id="section-linemove-1">
+                                <h4></span> کاربر گرامی سلام&nbsp;&nbsp;<span class="icon flaticon-lightbulb"></h4>
+                                <p>این برنامه برای افزایش راحتی و هوشمند سازی مدارس سطح کشور طراحی شده است</p>
+                            </section>
+
+                            <!-- TAB 2 -->
+                            <section id="section-linemove-2">
+                                <h4>امکانات برنامه اندروید</h4>
+                                <ul class="features">
+                                    <li><a class="tooltip" href="#" target="_blank"></span> دفتر کلاسی&nbsp;&nbsp;</a><span class="icon flaticon-desktop1"> </li>
+                                    <li><a class="tooltip" href="#" target="_blank"></span>حضور غیاب&nbsp;&nbsp;</a><span class="icon flaticon-small62"> </li>
+                                </ul>
+                                <ul class="features">
+                                    <li><a class="tooltip" href="#" target="_blank"></span> نمره دهی به دانش آموز&nbsp;&nbsp;</a><span class="icon flaticon-outlined3"> </li>
+                                    <li><a class="tooltip" href="#" target="_blank"></span> درج فایل آزمون و...&nbsp;&nbsp;</a><span class="icon flaticon-lightbulb"> </li>
+                                </ul>
+                               
+                            </section>
+
+                            <!-- TAB 3 -->
+                            <section id="section-linemove-3">
+                                <p>
+                                    <h4>امکانات برنامه ویندوز</h4>
+                                    <ul class="features">
+                                        <li><a class="tooltip" href="#" target="_blank"></span> مدیریت دفاتر کلاسی&nbsp;&nbsp;</a><span class="icon flaticon-desktop1"> </li>
+                                        <li><a class="tooltip" href="#" target="_blank"></span> چاپ کارنامه&nbsp;&nbsp;</a><span class="icon flaticon-small62"> </li>
+                                    </ul>
+                                    <ul class="features">
+                                        <li><a class="tooltip" href="#" target="_blank"></span> مشاهده حضور غیاب&nbsp;&nbsp;</a><span class="icon flaticon-outlined3"> </li>
+                                        <li><a class="tooltip" href="#" target="_blank"></span> مشاهده اطلاعات دانش آموز&nbsp;&nbsp;</a><span class="icon flaticon-lightbulb"> </li>
+                                    </ul>
+                                    <ul class="features">
+                                        <li><a class="tooltip" href="#" target="_blank"></span> مشاهده پیشرفت تحصیلی&nbsp;&nbsp;</a><span class="icon flaticon-outlined3"> </li>
+                                        
+                                    </ul>
+                            </section>
+
+                            <!-- TAB 4 -->
+                            <section id="section-linemove-4">
+                                <p>
+                                   وب سایت مدارس هوشمند برای دانش آموز و معلم و اولیا طراحی شده و امکانات جالبی را شامل میشود
+                                </p>
+                            </section>
+
+                        </div>
+                        <!-- END TABS CONTENT -->
+                        <!-- END SECTION ABOUT -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION ABOUT -->
+        <!-- SECTION VIDEO -->
+        <div class="section" id="section3">
+            <div class="wrap">
+                <div class="box">
+                    <!-- SECTION VIDEO CONTENT -->
+                    <h2> مشاهده تیزر تبلیغاتی ما</h2>
+                    <video width="500" height="281" controls>
+                        <source src="assets/video.webm" type="video/webm" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- END SECTION VIDEO CONTENT-->
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION VIDEO -->
+        <!-- SECTION CLIENTS -->
+        <div class="section" id="section4">
+            <div class="wrap">
+                <div class="box">
+                    <!-- SECTION CONTACT CONTENT-->
+                    <h2>اطلاعات تماس با ما</h2>
+                    <ul class="features">
+                        <li><a class="tooltip" href="#"><span class="icon flaticon-telephone1"></span> شماره های تماس<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-telephone1"></span>پشتیبانی : 09144967941  <br>مشاوره : 09144967941 <br>مدیریت : 09144967941   </span></span></span></a> </li>
+                        <li>
+                            <span class="tooltip">
+                                <span class="icon flaticon-map5"></span>آدرس و موقعیت ما<span class="tooltip-content">
+                                    <span class="tooltip-text">
+                                        <span class="tooltip-inner">
+                                            <span class="icon flaticon-map5"></span>ارومیه - خیابان استادان
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="features">
+                        <li>
+                            <span class="tooltip">
+                                <span class="icon flaticon-cursor7"></span>وب سایت  <span class="tooltip-content">
+                                    <span class="tooltip-text">
+                                        <span class="tooltip-inner">
+                                            <span class="icon flaticon-cursor7"></span>
+                                            <br> <a href="#" target="_blank">www.para-co.com</a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </li>
+                        <li><a class="tooltip" href="#"><span class="icon flaticon-mail9"></span> ایمیل ها<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-mail9"></span>info@para-co.ir<br>tohidhaghighi@gmail.com<br>منتظر ایمیل هایتان هستیم</span></span></span></a> </li>
+                    </ul>
+
+
+                    <!-- END SECTION CONTACT -->
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    
+    <!-- SECTION CONTACT -->
+    <!-- SOCIAL ICONS -->
+    <div class="wrap">
+        <div id="social-icons">
+            <ul>
+                <li><a href="http://para-co.com" target="_blank"><i class="flaticon-facebook6"></i></a> </li>
+                <li><a href="http://para-co.com" target="_blank"><i class="flaticon-social19"></i></a> </li>
+                <li><a href="http://para-co.com" target="_blank"><i class="flaticon-google16"></i></a> </li>
+                <li><a href="http://para-co.com" target="_blank"><i class="flaticon-social40"></i></a> </li>
+               
+                <!-- Place this tag where you want the +1 button to render. -->
+                <div class="g-plusone" data-href="http://para-co.com"></div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- END SOCIAL ICONS -->
+    <!-- SCRIPTS -->
+    <script src="~/Design/js/jquery.easings.min.js"></script>
+    <script src="~/Design/js/jquery.fullPage.js"></script>
+    <script src="~/Design/js/cbpFWTabs.js"></script>
+    <script src="~/Design/js/jquery.sidr.min.js"></script>
+    <script src="~/Design/js/scripts.js"></script>
+    <!--<script type="text/javascript" src="js/video.js"></script> -->
+
+</body>
+</html>

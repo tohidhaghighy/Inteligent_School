@@ -1,0 +1,5 @@
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.Helpers\bin\Debug\SchoolIntelligentWeb.Helpers.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.Helpers\bin\Debug\SchoolIntelligentWeb.Helpers.pdb
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.Helpers\obj\Debug\SchoolIntelligentWeb.Helpers.csprojResolveAssemblyReference.cache
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.Helpers\obj\Debug\SchoolIntelligentWeb.Helpers.dll
+E:\شرکت پویا اندیشان راه اینده\Web\SchoolIntelligentWeb\SchoolIntelligentWeb.Helpers\obj\Debug\SchoolIntelligentWeb.Helpers.pdb
