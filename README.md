@@ -10,4 +10,8 @@ Online school website
  
 Teacher Can Add grade and show student grade chart 
 
-Parent can see childere grade
+Parent can see student grade
+
+Student do homework and upload to teacher 
+
+Student can give quiz 
