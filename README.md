@@ -8,3 +8,6 @@ Online school website
  
  - Use Identity
  
+Teacher Can Add grade and show student grade chart 
+
+Parent can see childere grade
